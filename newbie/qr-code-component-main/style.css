@@ -7,7 +7,6 @@
 }
 
 :root{
-     --White: hsl(0, 0%, 100%);
      --Light-gray: hsl(212, 45%, 89%);
      --Grayish-blue: hsl(220, 15%, 55%);
      --Dark-blue: hsl(218, 44%, 22%);
@@ -17,4 +16,21 @@ body{
      font-size: 15px;
 
      background: var(--Light-gray);
+}
+.title{
+     color: var(--Dark-blue);
+     font-size: 1.4rem;
+}
+.text{
+     color: var(--Grayish-blue);
+     font-size: 1rem;
+}
+.card{
+     background: white;
+     border-radius: 18px;
+
+     max-width: 400px;
+     padding: 1.4rem;
+
+     text-align: center;
 }
