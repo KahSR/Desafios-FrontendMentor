@@ -17,20 +17,36 @@ body{
 
      background: var(--Light-gray);
 }
+img{
+     max-width: 100%;
+}
 .title{
      color: var(--Dark-blue);
-     font-size: 1.4rem;
+     font-size: 1.6rem;
 }
 .text{
      color: var(--Grayish-blue);
-     font-size: 1rem;
+     font-size: 1.1rem;
 }
 .card{
      background: white;
      border-radius: 18px;
 
      max-width: 400px;
-     padding: 1.4rem;
+     padding: 1.4rem 1.4rem 1.8rem;
 
      text-align: center;
+}
+.card__boxImg{
+     margin-bottom: 20px;
+}
+.card__boxImg img{
+     display: block;
+     border-radius: 18px;
+}
+.card .title, .text{
+     padding: 0 1rem;
+}
+.card .title{
+     margin-bottom: 12px;
 }
