@@ -4,4 +4,4 @@
 
 ### :rocket: Concluidos
 
-- <a href="newbie/qr-code-component-main">QR code component</a>
+- :full_moon: <a href="newbie/qr-code-component-main">QR code component</a>
