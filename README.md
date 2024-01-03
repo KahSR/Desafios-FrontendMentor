@@ -4,4 +4,4 @@
 
 ### :rocket: Concluidos
 
-- :full_moon: <a href="newbie/qr-code-component-main">QR code component</a> - [clique](https://qr-code-component-iota-puce.vercel.app/) para visualizar a resolução.
+- :full_moon: <a href="newbie/qr-code-component-main">QR code component</a>. Visualizar a resolução, [clique](https://qr-code-component-iota-puce.vercel.app/) :rocket:
