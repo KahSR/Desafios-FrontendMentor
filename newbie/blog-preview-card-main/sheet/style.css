@@ -60,7 +60,7 @@ img{
      box-shadow: 12px 12px var(--Black);
 }
 
-.card__content p:nth-child(1){
+.card__content >  p:nth-child(1){
      display: inline-block;
      padding: .5rem .8rem;
      margin-bottom: 18px;
@@ -71,7 +71,7 @@ img{
      background: var(--Yellow);
      border-radius: 8px;
 }
-.card__content p:nth-child(2){
+.card__content > p:nth-child(2){
      font-size: .9rem;
      font-weight: 600;
      color: var(--Black);
@@ -81,8 +81,22 @@ img{
 .card__content .title-link{
      margin-bottom: 10px;
 }
-.card__content p:nth-child(4){
+.card__content > p:nth-child(4){
      color: var(--Grey);
      line-height: 1.8rem;
      font-size: 1rem;
+}
+.card__avatar{
+     margin: 1rem 0;
+
+     display: flex;
+     align-items: center;
+     gap: 12px;
+}
+.card__avatar-boxImg img{
+     width: 48px;
+}
+.card__avatar-userName{
+     font-weight: 800;
+     font-size: .9rem;
 }
