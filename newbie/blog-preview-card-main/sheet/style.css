@@ -15,3 +15,13 @@
 body{
      background: var(--Yellow);
 }
+
+.card{
+     background: var(--White);
+     border-radius: 18px;
+     box-shadow: 8px 8px var(--Black);
+     border: 1px solid var(--Black);
+
+     width: 90%;
+     padding: 1.8rem;
+}
