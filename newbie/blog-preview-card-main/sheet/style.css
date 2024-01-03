@@ -13,7 +13,25 @@
      --Black: hsl(0, 0%, 7%);
 }
 body{
+     min-height: 100vh;
+     font-family: 'Figtree', sans-serif;
+
      background: var(--Yellow);
+}
+.title-link{
+     display: inline-block;
+     text-decoration: none;
+
+     padding: .4rem 0; /*Para aumentar um pouco a área do clique no link */
+
+     font-weight: 800;
+     font-size: 1.3rem;
+
+     color: var(--Black);
+     transition:  color .2s;
+}
+.title-link:hover{
+     color: var(--Yellow);
 }
 
 .card{
@@ -24,4 +42,36 @@ body{
 
      width: 90%;
      padding: 1.8rem;
+
+     transition: box-shadow .2s;
+}
+.card:hover{
+     box-shadow: 12px 12px var(--Black);
+}
+
+.card__content p:nth-child(1){
+     display: inline-block;
+     padding: .5rem .8rem;
+     margin-bottom: 18px;
+
+     font-weight: 800;
+     font-size: .9rem;
+
+     background: var(--Yellow);
+     border-radius: 8px;
+}
+.card__content p:nth-child(2){
+     font-size: .9rem;
+     font-weight: 600;
+     color: var(--Black);
+
+     margin-bottom: 16px;
+}
+.card__content .title-link{
+     margin-bottom: 12px;
+}
+.card__content p:nth-child(4){
+     color: var(--Grey);
+     line-height: 1.8rem;
+     font-size: 1rem;
 }
