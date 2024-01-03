@@ -54,14 +54,14 @@ img{
 
      transition: box-shadow .2s;
 }
+.card:hover{
+     box-shadow: 12px 12px var(--Black);
+}
 .card__boxImg {
      margin-bottom: 20px;
 }
 .card__boxImg img{
      border-radius: 12px;
-}
-.card:hover{
-     box-shadow: 12px 12px var(--Black);
 }
 
 .card__content >  p:nth-child(1){
