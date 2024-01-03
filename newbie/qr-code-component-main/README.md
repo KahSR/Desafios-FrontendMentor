@@ -15,7 +15,7 @@ Na pasta `/design`. Você encontrará uma versão móvel e uma versão desktop d
 
 ## Implantar
 
-Utilizei a plataforma [Vercel](https://vercel.com/) para a hospedagem.
+Utilizei a plataforma [Vercel](https://vercel.com/) para a implatação.
 
 Visualização  da minha resolução do [desafio](https://qr-code-component-iota-puce.vercel.app/).
 
