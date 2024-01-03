@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2? família= Figtree:ital,wght@0.600;0.800;1.600 & display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+:root{
+     --Yellow: hsl(47, 88%, 63%);
+     --White: hsl(0, 0%, 100%);
+     --Grey: hsl(0, 0%, 50%);
+     --Black: hsl(0, 0%, 7%);
+}
+body{
+     background: var(--Yellow);
+}
