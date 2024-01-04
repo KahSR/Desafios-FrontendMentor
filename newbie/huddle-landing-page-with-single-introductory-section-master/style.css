@@ -16,6 +16,7 @@ body{
      font-family: 'Open Sans', sans-serif;
 
      background: var(--Violet) url(images/bg-mobile.svg)no-repeat top;
+     background-size: contain;
 }
 img{
      max-width: 100%;
