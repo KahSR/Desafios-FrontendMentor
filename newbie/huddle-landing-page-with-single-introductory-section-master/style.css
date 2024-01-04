@@ -5,9 +5,6 @@
      padding: 0;
      box-sizing: border-box;
 }
-img{
-     max-width: 100%;
-}
 
 :root{
      --Violet: hsl(257, 40%, 49%);
@@ -16,11 +13,112 @@ img{
 
 body{
      min-height: 100vh;
-
      font-family: 'Open Sans', sans-serif;
 
      background: var(--Violet);
 }
-header, main{
+img{
+     max-width: 100%;
+}
+.header, .main{
      padding: 0 1rem;
+}
+/* ------- */
+
+/* componentes */
+.logo{
+     width: 150px;
+}
+.title, .text{
+     color: #fff;
+}
+.title{
+     font-size: 1.6rem;
+}
+.text{
+     line-height: 1.8rem;
+}
+.button-link{
+     font-family: 'Poppins', sans-serif;
+
+     text-decoration: none;
+     display: inline-block;
+
+     color: var(--Violet);
+
+     background: #fff;
+     border-radius: 20px;
+     padding: .6rem 5rem;
+}
+/* ----- */
+
+/* State */
+.button-link{
+     transition: .2s;
+}
+.button-link:hover{
+     background: var(--Soft-Magenta);
+     color: #fff;
+}
+.socials__icon{
+     transition:border .2s, color .2s;
+}
+.socials__icon:hover{
+     border-color: var(--Soft-Magenta);
+     color: var(--Soft-Magenta);
+}
+
+/* ------ */
+.header{
+     padding-top: 1rem;
+}
+
+.main{
+     padding-top: 4rem;
+}
+.illustration{
+     text-align: center;
+}
+.illustration-img{
+     width: 500px;
+}
+.content{
+     text-align: center;
+     padding-top: 4rem;
+}
+.content .title, .text{
+     margin-bottom: 20px;
+}
+
+.footer{
+     text-align: center;
+     padding-top: 4rem;
+     padding-bottom: 1rem;
+}
+.socials{
+     margin-bottom: 20px;
+}
+.socials__link{
+     display: inline-block;
+     border-radius: 50%;
+     text-align: center;
+}
+.socials__link + .socials__link{
+     margin-left: 1rem;
+}
+.socials__icon{
+     color: #fff;
+     font-size: 1.2rem;
+
+     padding: 6px;
+
+     border: 1px solid #fff;
+     border-radius: 50%;
+}
+.attribution { 
+     font-size: 14px;
+     color: #fff;
+}
+.attribution a{
+     color: var(--Soft-Magenta);
 }
