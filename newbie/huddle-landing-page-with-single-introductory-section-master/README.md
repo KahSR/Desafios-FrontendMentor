@@ -23,7 +23,7 @@ Todas as imagens estão em `/images`.
 
 Utilizei a plataforma [Vercel](https://vercel.com/) para a implatação.
 
-Visualização da minha resolução do [desafio](https://desafios-blog-preview-card.vercel.app/).
+Visualização da minha resolução do [desafio](https://huddle-landing-page-topaz-three.vercel.app/).
 
 ## Onde Encontrar o desafio
 
