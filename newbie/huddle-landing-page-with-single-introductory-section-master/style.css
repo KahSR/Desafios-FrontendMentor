@@ -15,7 +15,7 @@ body{
      min-height: 100vh;
      font-family: 'Open Sans', sans-serif;
 
-     background: var(--Violet) url(images/bg-mobile.svg)no-repeat top;
+     background: var(--Violet) url(images/bg-mobile.svg)no-repeat;
      background-size: contain;
 }
 img{
@@ -26,9 +26,9 @@ img{
 }
 /* ------- */
 
-/* componentes */
+/* COMPONENTS */
 .logo{
-     width: 150px;
+     width: 140px;
 }
 .title, .text{
      color: #fff;
@@ -53,7 +53,7 @@ img{
 }
 /* ----- */
 
-/* State */
+/* STATE */
 .button-link{
      transition: .2s;
 }
@@ -68,7 +68,6 @@ img{
      border-color: var(--Soft-Magenta);
      color: var(--Soft-Magenta);
 }
-
 /* ------ */
 .header{
      padding-top: 1rem;
@@ -117,9 +116,74 @@ img{
      border-radius: 50%;
 }
 .attribution { 
-     font-size: 14px;
+     font-size: 12px;
      color: #fff;
 }
 .attribution a{
      color: var(--Soft-Magenta);
+}
+
+@media (min-width: 768px){
+     .title{
+          font-size:1.8rem;
+     }
+     .text{
+          width: 500px;
+          margin: 0  auto 20px;
+     }
+}
+
+@media (min-width: 1024px){
+     body{
+          background-image:url(images/bg-desktop.svg);
+     }
+     .header, .main, .footer{
+          padding: 0  4rem;
+     }
+     /* COMPONENTS */
+     .logo{
+          width: 180px;
+     }
+     .title{
+          font-size: 2.4rem;
+     }
+     .text{
+          margin: 0 0 20px;
+     }
+     /* --------- */
+
+     .header{
+          padding-top: 2rem;
+     }
+
+     .main{
+          padding-top:3rem;
+
+          display: flex;
+          align-items: flex-start;
+          gap: 60px;
+     }
+     .illustration{
+          width: 55%;
+     }
+     .illustration-img{
+          width: 100%;
+     }
+     .content{
+          text-align: left;
+          padding-top: 40px;
+          width: 45%;
+     }
+
+     .footer{
+          padding-top: 0;
+          text-align: right;
+          display: flex;
+          flex-direction: row-reverse;
+          align-items:center;
+          gap: 12px;
+     }
+     .socials{
+          margin: 0; /*margin que tinha no mobile */
+     }
 }
