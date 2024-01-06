@@ -22,7 +22,7 @@ $darkBlue: hsl(223, 47%, 23%);
 body{
      min-height: 100vh;
      font-family: 'Red Hat Display', sans-serif;
-     background: $PaleBlue url(../images/pattern-background-desktop.svg)no-repeat top;
+     background: $PaleBlue url(../images/pattern-background-desktop.svg)no-repeat;
      background-size: contain;
      display: flex;
      align-items: center;
@@ -113,7 +113,7 @@ img{
                background: hsl(225, 100%, 96%);
                border-radius: 18px;
 
-               padding: 20px;
+               padding: 12px 20px;
                margin-bottom: 20px;
 
                display: flex;
@@ -147,6 +147,34 @@ img{
                .button + .button{
                     margin-top: 12px;
                }
+          }
+     }
+}
+
+
+@media (max-width: 1024px){
+     .card{
+          margin: 2rem 0;    
+     }
+}
+@media (max-width: 425px){
+    .card{
+          width: 85%;
+
+          .card__content{
+               padding: 2rem 1rem 1rem;
+          }
+    }
+}
+
+@media (max-width:320px){
+     .card{
+          width: 100%;
+          border-radius: 0;
+          margin: 0;
+          
+          .card__content{
+               padding: 2rem 1rem 1rem;
           }
      }
 }

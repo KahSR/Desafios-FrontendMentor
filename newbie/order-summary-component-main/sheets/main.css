@@ -8,7 +8,7 @@
 body {
   min-height: 100vh;
   font-family: "Red Hat Display", sans-serif;
-  background: hsl(225, 100%, 94%) url(../images/pattern-background-desktop.svg) no-repeat top;
+  background: hsl(225, 100%, 94%) url(../images/pattern-background-desktop.svg) no-repeat;
   background-size: contain;
   display: flex;
   align-items: center;
@@ -106,7 +106,7 @@ img {
 .card .card__content .card__box-plan {
   background: hsl(225, 100%, 96%);
   border-radius: 18px;
-  padding: 20px;
+  padding: 12px 20px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -134,4 +134,28 @@ img {
 }
 .card .card__content .card__group-buttons .button + .button {
   margin-top: 12px;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    margin: 2rem 0;
+  }
+}
+@media (max-width: 425px) {
+  .card {
+    width: 85%;
+  }
+  .card .card__content {
+    padding: 2rem 1rem 1rem;
+  }
+}
+@media (max-width: 320px) {
+  .card {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+  .card .card__content {
+    padding: 2rem 1rem 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */
