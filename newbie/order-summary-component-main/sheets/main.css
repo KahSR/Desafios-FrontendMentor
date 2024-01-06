@@ -25,8 +25,69 @@ img {
   letter-spacing: 1px;
 }
 
+.text {
+  color: hsl(224, 23%, 55%);
+  line-height: 1.4rem;
+  font-size: 0.9rem;
+}
+
+.link-change {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: hsl(245, 75%, 52%);
+  transition: 0.2s;
+}
+.link-change:hover {
+  color: hsl(245, 75%, 52%);
+  opacity: 80%;
+}
+.link-change:hover {
+  text-decoration: none;
+}
+
+.button {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 5px 10px hsl(225, 100%, 84%);
+  width: 100%;
+  padding: 1rem 0;
+  background: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.button:hover {
+  color: hsl(225, 100%, 98%);
+  opacity: 80%;
+}
+
+.button--bg {
+  background: none;
+  box-shadow: none;
+  color: hsl(224, 23%, 55%);
+  width: 50%;
+  transition: color 0.2s;
+}
+.button--bg:hover {
+  color: hsl(223, 47%, 23%);
+  opacity: 100%;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 .card {
-  max-width: 400px;
+  max-width: 390px;
   background: hsl(225, 100%, 98%);
   border-radius: 20px;
   overflow: hidden;
@@ -34,4 +95,41 @@ img {
 .card .card__content {
   text-align: center;
   padding: 2rem;
+}
+.card .card__content .title {
+  margin-bottom: 10px;
+}
+.card .card__content .text {
+  margin-bottom: 12px;
+}
+.card .card__content .card__box-plan {
+  background: hsl(225, 100%, 96%);
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .card__content .card__box-plan .card__plan {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.card .card__content .card__box-plan .card__plan .card__preco {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.card .card__content .card__box-plan .card__plan p:first-child {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.card .card__content .card__box-plan .card__plan p:last-child {
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+}
+.card .card__content .card__group-buttons .button + .button {
+  margin-top: 12px;
 }/*# sourceMappingURL=main.css.map */

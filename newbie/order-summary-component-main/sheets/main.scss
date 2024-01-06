@@ -12,6 +12,13 @@ $veryPaleBlue: hsl(225, 100%, 98%);
 $DesaturatedBlue: hsl(224, 23%, 55%);
 $darkBlue: hsl(223, 47%, 23%);
 
+@mixin hover($color, $opacity){
+     &:hover{
+          color: $color;
+          opacity: $opacity;
+     }
+}
+
 body{
      min-height: 100vh;
      font-family: 'Red Hat Display', sans-serif;
@@ -32,9 +39,60 @@ img{
 }
 .text{
      color: $DesaturatedBlue;
+     line-height: 1.4rem;
+     font-size: .9rem;
 }
+.link-change{
+     font-weight: 700;
+     font-size: .9rem;
+     color: $brightBlue;
+
+     transition: .2s;
+
+     @include hover($brightBlue,  80%);
+
+     &:hover{
+          text-decoration: none;
+     }
+}
+.button{
+     border: none;
+     border-radius: 12px;
+     box-shadow: 0px 5px 10px hsl(225, 100%, 84%);
+
+     width: 100%;
+     padding: 1rem 0;
+
+     background: $brightBlue;
+     color: $veryPaleBlue;
+
+     font-weight: 700;
+     font-size: .9rem;
+     letter-spacing: 1px;
+
+     cursor: pointer;
+
+     transition: opacity .2s;
+     @include hover($veryPaleBlue, 80%);
+}
+.button--bg{
+     background:none;
+     box-shadow: none;
+     color: $DesaturatedBlue;
+     width: 50%;
+
+     transition:color 0.2s;
+     @include hover($darkBlue, 100%);
+}
+.attribution { 
+     font-size: 12px; 
+     text-align: center; 
+     margin-top: 5px;
+ }
+.attribution a { color: hsl(228, 45%, 44%); }
+ 
 .card{
-     max-width: 400px;
+     max-width: 390px;
 
      background: $veryPaleBlue;
      border-radius: 20px;
@@ -43,5 +101,51 @@ img{
      .card__content{
           text-align: center;
           padding: 2rem;
+
+          .title{
+               margin-bottom: 10px;
+          }
+          .text{
+               margin-bottom: 12px;
+          }
+
+          .card__box-plan{
+               background: hsl(225, 100%, 96%);
+               border-radius: 18px;
+
+               padding: 20px;
+               margin-bottom: 20px;
+
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+
+               .card__plan{
+                    display: flex;
+                    align-items: center;
+                    gap:12px;
+
+                    .card__preco{
+                         display: flex;
+                         flex-direction: column;
+                         align-items: flex-start;
+                         gap: 5px;
+                    }
+                    & p:first-child{
+                         color: $darkBlue;
+                         font-weight: 900;
+                    }
+                    & p:last-child{
+                         color: $DesaturatedBlue;
+                         font-size: 16px;
+                    }
+               }
+          }
+
+          .card__group-buttons{
+               .button + .button{
+                    margin-top: 12px;
+               }
+          }
      }
 }
