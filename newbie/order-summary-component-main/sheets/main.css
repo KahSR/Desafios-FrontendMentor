@@ -8,7 +8,8 @@
 body {
   min-height: 100vh;
   font-family: "Red Hat Display", sans-serif;
-  background-color: hsl(225, 100%, 94%);
+  background: hsl(225, 100%, 94%) url(../images/pattern-background-desktop.svg) no-repeat top;
+  background-size: contain;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +49,7 @@ img {
 .button {
   border: none;
   border-radius: 12px;
-  box-shadow: 0px 5px 10px hsl(225, 100%, 84%);
+  box-shadow: 0px 10px 15px hsl(225, 100%, 84%);
   width: 100%;
   padding: 1rem 0;
   background: hsl(245, 75%, 52%);
@@ -87,14 +88,14 @@ img {
 }
 
 .card {
-  max-width: 390px;
+  max-width: 400px;
   background: hsl(225, 100%, 98%);
   border-radius: 20px;
   overflow: hidden;
 }
 .card .card__content {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 2.4rem 1rem;
 }
 .card .card__content .title {
   margin-bottom: 10px;
@@ -120,15 +121,16 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 5px;
+  gap: 2px;
 }
 .card .card__content .card__box-plan .card__plan p:first-child {
   color: hsl(223, 47%, 23%);
   font-weight: 900;
+  font-size: 14px;
 }
 .card .card__content .card__box-plan .card__plan p:last-child {
   color: hsl(224, 23%, 55%);
-  font-size: 16px;
+  font-size: 14px;
 }
 .card .card__content .card__group-buttons .button + .button {
   margin-top: 12px;
