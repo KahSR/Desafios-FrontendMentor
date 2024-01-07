@@ -11,6 +11,7 @@
 }
 .button-change{
      border:none;
+     border-bottom: 1px solid $brightBlue;
      background-color:transparent;
 
      font-weight: 700;
@@ -23,7 +24,7 @@
      @include hoverButton($brightBlue,  80%);
 
      &:hover{
-          border-bottom: 1px solid $brightBlue;
+          border-bottom: none;
      }
 }
 .button{

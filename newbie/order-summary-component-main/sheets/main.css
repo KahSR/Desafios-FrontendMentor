@@ -83,6 +83,7 @@ img {
 
 .button-change {
   border: none;
+  border-bottom: 1px solid hsl(245, 75%, 52%);
   background-color: transparent;
   font-weight: 700;
   font-size: 0.9rem;
@@ -95,7 +96,7 @@ img {
   opacity: 80%;
 }
 .button-change:hover {
-  border-bottom: 1px solid hsl(245, 75%, 52%);
+  border-bottom: none;
 }
 
 .button {
