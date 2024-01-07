@@ -10,16 +10,20 @@
      font-size: .9rem;
 }
 .button-change{
+     border:none;
+     background-color:transparent;
+
      font-weight: 700;
      font-size: .9rem;
      color: $brightBlue;
 
-     transition: .2s;
+     cursor: pointer;
+     transition: .2s border;
 
      @include hoverButton($brightBlue,  80%);
 
      &:hover{
-          text-decoration: none;
+          border-bottom: 1px solid $brightBlue;
      }
 }
 .button{
@@ -30,7 +34,7 @@
      width: 100%;
      padding: 1rem 0;
 
-     background: $brightBlue;
+     background:$brightBlue;
      color: $veryPaleBlue;
 
      font-weight: 700;

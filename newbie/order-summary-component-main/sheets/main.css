@@ -19,74 +19,6 @@ img {
   max-width: 100%;
 }
 
-.title {
-  color: hsl(223, 47%, 23%);
-  font-size: 1.5rem;
-  font-weight: 900;
-  letter-spacing: 1px;
-}
-
-.text {
-  color: hsl(224, 23%, 55%);
-  line-height: 1.4rem;
-  font-size: 0.9rem;
-}
-
-.link-change {
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: hsl(245, 75%, 52%);
-  transition: 0.2s;
-}
-.link-change:hover {
-  color: hsl(245, 75%, 52%);
-  opacity: 80%;
-}
-.link-change:hover {
-  text-decoration: none;
-}
-
-.button {
-  border: none;
-  border-radius: 12px;
-  box-shadow: 0px 10px 15px hsl(225, 100%, 84%);
-  width: 100%;
-  padding: 1rem 0;
-  background: hsl(245, 75%, 52%);
-  color: hsl(225, 100%, 98%);
-  font-weight: 700;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: opacity 0.2s;
-}
-.button:hover {
-  color: hsl(225, 100%, 98%);
-  opacity: 80%;
-}
-
-.button--bg {
-  background: none;
-  box-shadow: none;
-  color: hsl(224, 23%, 55%);
-  width: 50%;
-  transition: color 0.2s;
-}
-.button--bg:hover {
-  color: hsl(223, 47%, 23%);
-  opacity: 100%;
-}
-
-.attribution {
-  font-size: 12px;
-  text-align: center;
-  margin-top: 5px;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 .card {
   max-width: 400px;
   background: hsl(225, 100%, 98%);
@@ -134,6 +66,77 @@ img {
 }
 .card .card__content .card__group-buttons .button + .button {
   margin-top: 12px;
+}
+
+.title {
+  color: hsl(223, 47%, 23%);
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.text {
+  color: hsl(224, 23%, 55%);
+  line-height: 1.4rem;
+  font-size: 0.9rem;
+}
+
+.button-change {
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: hsl(245, 75%, 52%);
+  cursor: pointer;
+  transition: 0.2s border;
+}
+.button-change:hover {
+  color: hsl(245, 75%, 52%);
+  opacity: 80%;
+}
+.button-change:hover {
+  border-bottom: 1px solid hsl(245, 75%, 52%);
+}
+
+.button {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 10px 15px hsl(225, 100%, 84%);
+  width: 100%;
+  padding: 1rem 0;
+  background: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.button:hover {
+  color: hsl(225, 100%, 98%);
+  opacity: 80%;
+}
+
+.button--bg {
+  background: none;
+  box-shadow: none;
+  color: hsl(224, 23%, 55%);
+  width: 50%;
+  transition: color 0.2s;
+}
+.button--bg:hover {
+  color: hsl(223, 47%, 23%);
+  opacity: 100%;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media (max-width: 1024px) {
