@@ -86,8 +86,9 @@ img {
   border-bottom: 1px solid hsl(245, 75%, 52%);
   background-color: transparent;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: hsl(245, 75%, 52%);
+  font-family: "Red Hat Display", sans-serif;
   cursor: pointer;
   transition: 0.2s border;
 }
@@ -96,7 +97,7 @@ img {
   opacity: 80%;
 }
 .button-change:hover {
-  border-bottom: none;
+  border-bottom: 1px solid transparent;
 }
 
 .button {
