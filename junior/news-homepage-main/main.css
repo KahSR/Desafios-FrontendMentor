@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,4 +15,38 @@ ul {
 
 img {
   max-width: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  background: hsl(36, 100%, 99%);
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-areas: "header header" "content new" "others-new others-new" "footer footer";
+}
+.layout-grid .header {
+  grid-area: header;
+}
+.layout-grid .content {
+  grid-area: content;
+}
+.layout-grid .new {
+  grid-area: new;
+}
+.layout-grid .others-new {
+  grid-area: others-new;
+}
+.layout-grid .footer {
+  grid-area: footer;
+}
+
+.header {
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

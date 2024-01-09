@@ -1,0 +1,31 @@
+body{
+     font-family: $font-Inter;
+
+     min-height: 100vh;
+     background: $Off-white;
+}
+.layout-grid{
+     display: grid;
+     grid-template-columns:1fr 400px;
+     grid-template-areas:
+     "header header"
+     "content new"
+     "others-new others-new"
+     "footer footer";
+
+     .header{
+          grid-area: header;
+     }
+     .content{
+          grid-area: content;
+     }
+     .new{
+          grid-area: new;
+     }
+     .others-new{
+          grid-area: others-new;
+     }
+     .footer{
+          grid-area: footer;
+     }
+}
