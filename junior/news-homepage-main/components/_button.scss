@@ -1,0 +1,18 @@
+.button{
+     border: none;
+     background: $corSoft-red;
+     color: $corOff-white;
+
+     font-weight: 900;
+     letter-spacing: 4px;
+     text-transform: uppercase;
+
+     padding: .8rem 0;
+     width: 200px;
+
+     cursor: pointer;
+     transition: background .2s;
+     &:hover{
+          background: $corVery-dark-blue;
+     }
+}

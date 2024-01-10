@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.text {
+  color: hsl(236, 13%, 42%);
+  font-size: 15px;
+  line-height: 1.6rem;
+}
+
+.text--color {
+  color: hsl(233, 8%, 79%);
+}
+
+.button {
+  border: none;
+  background: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 0.8rem 0;
+  width: 200px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.button:hover {
+  background: hsl(240, 100%, 5%);
+}
+
+body {
+  min-height: 100vh;
+  background: hsl(36, 100%, 99%);
+}
+
+.header {
+  padding: 2rem 6.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-grid {
+  padding: 3rem 6.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "picture picture new" "conteiner conteiner new" "others-new others-new others-new";
+  gap: 40px;
+}
+
+.picture {
+  grid-area: picture;
+}
+
+.conteiner {
+  grid-area: conteiner;
+}
+
+.new {
+  grid-area: new;
+}
+
+.others {
+  grid-area: others-new;
+}
+
+.header {
+  padding: 2rem 6.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation .navigation__list {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  text-align: right;
+}
+.navigation .navigation__link {
+  color: hsl(236, 13%, 42%);
+  font-size: 1rem;
+  display: inline-block;
+  transition: 0.2s;
+}
+.navigation .navigation__link:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+.conteiner .content {
+  display: flex;
+  gap: 40px;
+}
+.conteiner .content .box-title {
+  width: 50%;
+}
+.conteiner .content .box-title .title {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  color: hsl(240, 100%, 5%);
+}
+.conteiner .content .box-text {
+  width: 50%;
+}
+.conteiner .content .box-text .text {
+  margin-bottom: 50px;
+  padding-right: 12px;
+}
+
+.new {
+  background: hsl(240, 100%, 5%);
+  padding: 2rem 1.2rem 0;
+}
+.new .title-new {
+  color: hsl(35, 77%, 62%);
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+}
+.new .new__list li:not(.notBorder):after {
+  content: "";
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+  width: 100%;
+  display: block;
+  margin: 35px 0;
+}
+.new .new__link {
+  display: inline-block;
+  color: hsl(36, 100%, 99%);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.others {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 40px 0 100px;
+}
+.others .others__box {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.others .others__box .others__box-img .others__img {
+  width: 180px;
+  height: 130px;
+}
+.others .others__box .others__content .others__number {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: hsl(233, 8%, 79%);
+  margin-bottom: 12px;
+}
+.others .others__box .others__content .others__link {
+  display: inline-block;
+  color: hsl(240, 100%, 5%);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+.others .others__box .others__content .text {
+  line-height: 1.4rem;
+}
+
+.footer {
+  background: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  padding: 20px 6.5rem;
+  text-align: right;
+  font-size: 14px;
+}
+.footer a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

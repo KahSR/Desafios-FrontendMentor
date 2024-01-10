@@ -1,0 +1,36 @@
+body{
+     min-height: 100vh;
+     background: $corOff-white;
+}
+
+.header{
+     padding: 2rem $padding-sides 0;
+
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.main-grid{
+     padding: 3rem $padding-sides 0;
+     display: grid;
+     grid-template-columns:1fr 1fr 1fr;
+     grid-template-areas:
+     "picture picture new"
+     "conteiner conteiner new"
+     "others-new others-new others-new";
+
+     gap: 40px ;
+}
+.picture{
+     grid-area: picture;
+}
+.conteiner{
+     grid-area: conteiner;
+}
+.new{
+     grid-area: new;
+}
+.others{
+     grid-area: others-new;
+}
