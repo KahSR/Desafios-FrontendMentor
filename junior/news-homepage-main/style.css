@@ -104,7 +104,7 @@ body {
   transition: 0.2s;
 }
 .navigation .navigation__link:hover {
-  color: hsl(35, 77%, 62%);
+  color: hsl(5, 85%, 63%);
 }
 
 .conteiner .content {
@@ -149,6 +149,10 @@ body {
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 12px;
+  transition: 0.2s;
+}
+.new .new__link:hover {
+  color: hsl(35, 77%, 62%);
 }
 
 .others {
@@ -179,6 +183,10 @@ body {
   font-weight: 700;
   font-size: 1.1rem;
   margin-bottom: 12px;
+  transition: 0.2s;
+}
+.others .others__box .others__content .others__link:hover {
+  color: hsl(5, 85%, 63%);
 }
 .others .others__box .others__content .text {
   line-height: 1.4rem;

@@ -1,11 +1,3 @@
-@mixin hoverColor($cor){
-     transition: .2s;
-
-     &:hover{
-          color: $cor;
-     }
-}
-
 .header{
      padding: 2rem $padding-sides 0;
 
@@ -25,7 +17,7 @@
           font-size: 1rem;
           display: inline-block;
 
-          @include hoverColor($corSof-red)
+          @include hoverColor($corSoft-red);
      }
 }
 
@@ -116,6 +108,7 @@
                     
                     margin-bottom: 12px;
 
+                    @include hoverColor($corSoft-red);
                }
 
                .text{

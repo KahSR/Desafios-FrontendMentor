@@ -8,3 +8,9 @@ $corVery-dark-blue: hsl(240, 100%, 5%);
 
 $padding-sides: 6.5rem;
 
+@mixin hoverColor($cor){
+     transition: .2s;
+     &:hover{
+          color: $cor;
+     }
+}
