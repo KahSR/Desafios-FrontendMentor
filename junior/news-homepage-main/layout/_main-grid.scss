@@ -1,5 +1,6 @@
 body{
      min-height: 100vh;
+     width: 100%;
      background: $corOff-white;
 }
 
@@ -20,7 +21,7 @@ body{
      "conteiner conteiner new"
      "others-new others-new others-new";
 
-     gap: 40px ;
+     gap: 35px ;
 }
 .picture{
      grid-area: picture;

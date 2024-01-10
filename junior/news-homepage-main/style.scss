@@ -3,14 +3,143 @@
 @import "layout/font";
 @import "layout/core";
 
+@import "components/main-title";
 @import "components/text";
 @import "components/button";
 
-
+@import "layout/media";
 @import "layout/main-grid";
 @import "layout/sub-grid";
 
+/*
+@media (min-width: 320px){
+     $padding-sides: 1rem;
 
+     #nav{
+          display: none;
+     }
+     .header{
+          padding: 2rem $padding-sides 0;
+     }
+     .main-grid{
+          width: 100%;
+          padding: 2.5rem $padding-sides 0;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-areas:
+          "picture picture picture"
+          "conteiner conteiner conteiner"
+          "new new  new "
+          "others-new others-new others-new";
+     
+          gap: 0;
+     }
+
+     .conteiner{
+          .content{
+               display: block;
+               .box-title{
+                    width: 100%;
+     
+                    .title{
+                         font-size: 2.4rem;
+                         color: $corVery-dark-blue;
+                         padding-right: 20px;
+
+                         margin: 18px 0;
+                    }
+               }
+               .box-text{
+                    width:  100%;
+     
+                    .text{
+                         margin-bottom: 30px;
+                         padding-right: 12px;
+                    }
+               }
+          }
+     }
+     .new{
+          padding: 2rem 1.4rem 1rem;
+          margin-top: 50px;
+     }
+
+     .others{
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 20px;
+     
+          padding: 50px 0 100px;
+
+          .others__box{
+               align-items: flex-end;
+
+               .others__link{
+                    font-size: 1rem;
+               }
+          }
+     }
+     .footer{
+          text-align: center;
+          padding: 2rem $padding-sides;
+     }
+}
+*/
+@media (max-width: 1380px){
+     $padding-sides: 3rem;
+
+     .header, .main-grid, .footer{
+          padding-left: $padding-sides;
+          padding-right: $padding-sides;
+     }
+}
+@media (max-width: 1125px){
+     .main-title{
+          font-size: 3rem;
+     }
+}
+@media (max-width:800px){
+     $padding-sides: 4rem;
+
+     .header, .main-grid, .footer{
+          padding-left: $padding-sides;
+          padding-right: $padding-sides;
+     }
+     .main-grid{
+          width: 100%;
+          padding: 2.5rem $padding-sides 0;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-areas:
+          "picture picture picture"
+          "conteiner conteiner conteiner"
+          "new new  new "
+          "others-new others-new others-new";
+     
+          gap: 40px;
+     }
+
+     .conteiner{
+          .content{
+               .box-title{
+                    border: 1px solid red;
+                    .title{
+                         font-size: 2.4rem;
+                         color: $corVery-dark-blue;
+                         padding-right: 20px;
+
+                         margin: 18px 0;
+                    }
+               }
+               .box-text{
+                    border: 1px solid;
+
+                    .text{
+                         margin-bottom: 30px;
+                         padding-right: 12px;
+                    }
+               }
+          }
+     }
+}
 
 
 
