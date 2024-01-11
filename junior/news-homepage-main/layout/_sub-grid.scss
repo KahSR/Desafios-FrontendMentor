@@ -23,7 +23,7 @@
 
 .content{
      display: flex;
-     gap: 35px;
+     gap: 40px;
 
      .box-title{
           width: 50%;
@@ -40,7 +40,7 @@
 
 .new{
      background: $corVery-dark-blue;
-     padding: 2rem 1.2rem 1rem;
+     padding: 2rem 1.2rem 1.4rem;
 
      .title-new{
           color: $corSof-orage;
@@ -68,40 +68,34 @@
 .others{
      display: grid;
      grid-template-columns: repeat(3, 1fr);
-     gap: 35px;
-     padding: 40px 0 100px;
-     
+     gap: 40px;
+
      .others__box{
           border: 1px solid;
-        
+
           display: flex;
-          align-items: center;
-          flex-wrap: wrap;
-          gap: 12px;
-       
-          .others__box-img{
-               .others__img{
-                    max-width: 120px;
-               }
-          }
-          .others__content{
-               width: 208px;
+          gap: 20px;
+
+          .others__img{
+              max-width: 150px;
+              height: 110px;
           }
           .others__number{
                font-size: 1.8rem;
                font-weight: 900;
                letter-spacing: 2px;
-               
+            
                color: $corGrayish-blue;
                margin-bottom: 12px;
           }
+
           .others__link{
                display: inline-block;
                color: $corVery-dark-blue;
 
                font-weight: 900;
                font-size: 1.1rem;
-               
+
                margin-bottom: 12px;
 
                @include hoverColor($corSoft-red);

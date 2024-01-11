@@ -68,11 +68,11 @@ body {
 }
 
 .main-grid {
-  padding: 3rem 9rem 0;
+  padding: 4rem 9rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "picture picture new" "conteiner conteiner new" "others-new others-new others-new";
-  gap: 35px;
+  gap: 40px;
 }
 
 .picture {
@@ -116,7 +116,7 @@ body {
 
 .content {
   display: flex;
-  gap: 35px;
+  gap: 40px;
 }
 .content .box-title {
   width: 50%;
@@ -131,7 +131,7 @@ body {
 
 .new {
   background: hsl(240, 100%, 5%);
-  padding: 2rem 1.2rem 1rem;
+  padding: 2rem 1.2rem 1.4rem;
 }
 .new .title-new {
   color: hsl(35, 77%, 62%);
@@ -160,21 +160,16 @@ body {
 .others {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 35px;
-  padding: 40px 0 100px;
+  gap: 40px;
 }
 .others .others__box {
   border: 1px solid;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
+  gap: 20px;
 }
-.others .others__box .others__box-img .others__img {
-  max-width: 120px;
-}
-.others .others__box .others__content {
-  width: 208px;
+.others .others__box .others__img {
+  max-width: 150px;
+  height: 110px;
 }
 .others .others__box .others__number {
   font-size: 1.8rem;
@@ -276,49 +271,81 @@ body {
                }
           }
      }
-     .footer{
-          text-align: center;
-          padding: 2rem $padding-sides;
-     }
 }
 */
-@media (max-width: 1380px) {
+@media (max-width: 1024px) {
+  #nav {
+    display: none;
+  }
+  .main-title {
+    font-size: 3.8rem;
+  }
   .header, .main-grid, .footer {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .main-grid {
+    width: 100%;
+    padding: 2.5rem 5rem 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "picture picture picture" "conteiner conteiner conteiner" "new new  new " "others-new others-new others-new";
+  }
+  .others {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
   }
 }
-@media (max-width: 1125px) {
+@media (max-width: 870px) {
   .main-title {
     font-size: 3rem;
   }
-}
-@media (max-width: 800px) {
   .header, .main-grid, .footer {
     padding-left: 4rem;
     padding-right: 4rem;
   }
-  .main-grid {
+}
+@media (max-width: 768px) {
+  .logo {
+    width: 60px;
+  }
+  .main-title {
+    font-size: 2.5rem;
+  }
+  .header, .main-grid, .footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .new {
+    margin-top: 50px;
+  }
+  .footer {
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .main-title {
+    font-size: 2rem;
+  }
+  .header, .main-grid, .footer {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+  .content {
+    display: block;
+  }
+  .content .box-title, .content .box-text {
     width: 100%;
-    padding: 2.5rem 4rem 0;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "picture picture picture" "conteiner conteiner conteiner" "new new  new " "others-new others-new others-new";
+  }
+  .content .main-title {
+    margin-bottom: 12px;
+  }
+  .content .box-text .text {
+    margin-bottom: 20px;
+  }
+  .others {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 40px;
-  }
-  .conteiner .content .box-title {
-    border: 1px solid red;
-  }
-  .conteiner .content .box-title .title {
-    font-size: 2.4rem;
-    color: hsl(240, 100%, 5%);
-    padding-right: 20px;
-    margin: 18px 0;
-  }
-  .conteiner .content .box-text {
-    border: 1px solid;
-  }
-  .conteiner .content .box-text .text {
-    margin-bottom: 30px;
-    padding-right: 12px;
   }
 }/*# sourceMappingURL=style.css.map */

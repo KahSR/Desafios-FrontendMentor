@@ -78,28 +78,18 @@
                }
           }
      }
-     .footer{
-          text-align: center;
-          padding: 2rem $padding-sides;
-     }
 }
 */
-@media (max-width: 1380px){
-     $padding-sides: 3rem;
 
-     .header, .main-grid, .footer{
-          padding-left: $padding-sides;
-          padding-right: $padding-sides;
+@media (max-width:1024px){
+     $padding-sides:5rem;
+     
+     #nav{
+          display: none;
      }
-}
-@media (max-width: 1125px){
      .main-title{
-          font-size: 3rem;
+          font-size: 3.8rem;
      }
-}
-@media (max-width:800px){
-     $padding-sides: 4rem;
-
      .header, .main-grid, .footer{
           padding-left: $padding-sides;
           padding-right: $padding-sides;
@@ -113,35 +103,79 @@
           "conteiner conteiner conteiner"
           "new new  new "
           "others-new others-new others-new";
-     
+     }
+     .others{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
           gap: 40px;
      }
+}
+@media (max-width: 870px){
+     $padding-sides: 4rem;
 
-     .conteiner{
-          .content{
-               .box-title{
-                    border: 1px solid red;
-                    .title{
-                         font-size: 2.4rem;
-                         color: $corVery-dark-blue;
-                         padding-right: 20px;
+     .main-title{
+          font-size: 3rem;
+     }
 
-                         margin: 18px 0;
-                    }
-               }
-               .box-text{
-                    border: 1px solid;
+     .header, .main-grid, .footer{
+          padding-left: $padding-sides;
+          padding-right: $padding-sides;
+     }
+}
+@media (max-width: 768px){
+     $padding-sides: 2rem;
 
-                    .text{
-                         margin-bottom: 30px;
-                         padding-right: 12px;
-                    }
+     .logo{
+          width: 60px;
+     }
+     .main-title{
+          font-size: 2.5rem;
+     }
+
+     .header, .main-grid, .footer{
+          padding-left: $padding-sides;
+          padding-right: $padding-sides;
+     }
+
+     .new{
+          margin-top: 50px;
+     }
+     .footer{
+          text-align: center;
+     }
+}
+@media (max-width: 425px){
+     $padding-sides: .8rem;
+     
+     .main-title{
+          font-size: 2rem;
+     }
+
+     .header, .main-grid, .footer{
+          padding-left: $padding-sides;
+          padding-right: $padding-sides;
+     }
+
+     .content{
+          display: block;
+          .box-title, .box-text{
+               width: 100%;
+          }
+          .main-title{
+               margin-bottom: 12px;
+          }
+          .box-text{
+               .text{
+                    margin-bottom: 20px;
                }
           }
      }
+     .others{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 40px;
+     }
 }
-
-
 
 
 

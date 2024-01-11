@@ -13,7 +13,7 @@ body{
 }
 
 .main-grid{
-     padding: 3rem $padding-sides 0;
+     padding: 4rem $padding-sides 0;
      display: grid;
      grid-template-columns:1fr 1fr 1fr;
      grid-template-areas:
@@ -21,7 +21,7 @@ body{
      "conteiner conteiner new"
      "others-new others-new others-new";
 
-     gap: 35px ;
+     gap: 40px ;
 }
 .picture{
      grid-area: picture;
