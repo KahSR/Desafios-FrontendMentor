@@ -27,4 +27,4 @@ Todas as imagens estão em `/images`.
 
 ## Implantar
 
-Utilizei a plataforma [Netkify](https://app.netlify.com/) para a implatação.
+Utilizei a plataforma [Netlify](https://app.netlify.com/) para a implatação.
