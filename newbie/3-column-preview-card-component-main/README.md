@@ -4,13 +4,9 @@
 
 ## Welcome! 👋
 
-<div text-align="center">
-  <p><a href="https://cards-components-grid.netlify.app/">Site Ativo<a/></p>
+<div>
+  <p text-align="center"><a href="https://cards-components-grid.netlify.app/">Site Ativo<a/> | <a href="https://www.frontendmentor.io">Challenge</a></p>
 </div>
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
-
-**To do this challenge, you need a basic understanding of HTML and CSS.**
 
 ## The challenge
 
