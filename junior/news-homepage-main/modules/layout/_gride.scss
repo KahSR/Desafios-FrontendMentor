@@ -1,0 +1,22 @@
+.gride{
+     padding: 70px 9rem 0;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-areas:
+     "picture picture new"
+     "section section new"
+     "post post post";
+     gap: 40px;
+}
+.picture{
+     grid-area: picture;
+}
+.new{
+     grid-area: new;
+}
+.section{
+     grid-area: section;
+}
+.post{
+     grid-area: post;
+}

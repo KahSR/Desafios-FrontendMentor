@@ -1,60 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+     <link rel="stylesheet" href="modules/style.css">
+     <title>Frontend Mentor | News homepage</title>
 </head>
 <body>
+     <div class="opacity"></div>
+     <header class="header">
+          <a href="#" class="logo">
+               <img src="assets/images/logo.svg" alt="">
+          </a>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+          <nav class="nav">
+               <ul class="nav__menu nav__menu-desktop" id="menu">
+                    <li>
+                         <a href="#" class="nav__link">Home</a>                    
+                    </li>
+                    <li>
+                         <a href="#" class="nav__link">New</a>                    
+                    </li>
+                    <li>
+                         <a href="#" class="nav__link">Popular</a>                    
+                    </li>
+                    <li>
+                         <a href="#" class="nav__link">Trending</a>                    
+                    </li>
+                    <li>
+                         <a href="#" class="nav__link">Categorie</a>                    
+                    </li>
+               </ul>
+          </nav>
 
-  The Bright Future of Web 3.0?
+          <button class="btn-mobile">
+               <img src="assets/images/icon-menu.svg" alt="" class="icon-menu">
+          </button>
+     </header>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+     <main class="gride">
+          <picture class="picture">
+               <source media="(max-width: 425px)" srcset="assets/images/image-web-3-mobile.jpg">
+               <img src="assets/images/image-web-3-desktop.jpg" alt="">
+          </picture>
 
-  Read more
+          <section class="section">
+               <div class="box-title">
+                    <h1 class="title">The Bright Future of Web 3.0?</h1>
+               </div>
 
-  New 
+               <div class="sla">
+                    <div class="content">
+                         <p class="text">
+                              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+                              But is it really fulfilling its promise?
+                         </p>
+                         <button type="button" class="button button-read">Read More</button>
+                    </div>
+               </div>
+          </section>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+          <aside class="new">
+               <h2 class="new__title">New</h2>
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
+               <ul class="new__list">
+                    <li>
+                         <a href="#" class="new__link">Hydrogen VS Electric Cars</a>
+                         <p class="text text--color">Will hydrogen-fueled cars ever catch up to EVs?</p>
+                    </li>
+                    <li>
+                         <a href="#" class="new__link">The Downsides of AI Artistry</a>
+                         <p class="text  text--color">What are the possible adverse effects of on-demand AI image generation?</p>
+                    </li>
+                    <li class="not-border">
+                         <a href="#" class="new__link">Is VC Funding Drying Up?</a>
+                         <p class="text  text--color">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                    </li>
+               </ul>
+          </aside>
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+          <aside class="post">
+               <div class="post__box">
+                    <div class="post__box-img">
+                         <img src="assets/images/image-retro-pcs.jpg" alt="" class="post__img">
+                    </div>
 
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
+                    <div class="post__content">
+                         <p class="post__number">01</p>
+                         <h2><a href="#"  class="post__link">Reviving Retro PCs</a></h2>
+                         <p class="text text-height">
+                              What happens when old PCs are given modern upgrades?
+                         </p>
+                    </div>
+               </div>
 
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
+               <div class="post__box">
+                    <div class="post__box-img">
+                         <img src="assets/images/image-top-laptops.jpg" alt="" class="post__img">
+                    </div>
+                    
+                    <div class="post__content">
+                         <p class="post__number">02</p>
+                         <h2><a href="#"  class="post__link">Top 10 Laptops of 2022</a></h2>
+                         <p class="text text-height">
+                              Our best picks for various needs and budgets.
+                         </p>
+                    </div>
+               </div>
 
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+               <div class="post__box">
+                    <div class="post__box-img">
+                         <img src="assets/images/image-gaming-growth.jpg" alt="" class="post__img">
+                    </div>
+                    
+                    <div class="post__content">
+                         <p class="post__number">03</p>
+                         <h2><a href="#"  class="post__link">The Growth of Gaming</a></h2>
+                         <p class="text text-height">
+                              How the pandemic has sparked fresh opportunities.
+                         </p>
+                    </div>
+               </div>
+          </aside>
+     </main>
+
+     <footer class="footer">
+          <p>
+               Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+               Coded by <a href="#">KahSR</a>.
+          </p>
+     </footer>
+     <script src="modules/js/script.js"></script>
 </body>
 </html>

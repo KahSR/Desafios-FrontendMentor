@@ -1,0 +1,40 @@
+.post{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 40px;
+
+     margin-top: 40px;
+}
+.post__box{
+     display: flex;
+     gap: 20px;
+
+     .post__img{
+          height:100%;
+          width: auto;
+          max-width: 120px;
+          object-fit:cover;
+     }
+     .post__content{
+          max-width: 230px;
+     }
+}
+.post__number{
+     color: $Grayish-blue;
+     font-weight: 700;
+     font-size: 2rem;
+     margin-bottom: 30px;
+}
+.post__link{
+     display: block;
+     color: $Very-dark-blue;
+     font-size: 1.1rem;
+     font-weight: 900;
+     margin-bottom: 20px;
+
+     transition: color .2s;
+     
+     &:hover{
+          color: $Soft-red;
+     }
+}

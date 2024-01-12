@@ -1,0 +1,27 @@
+.button-read{
+     border: none;
+     background: $Soft-red;
+     color: $Off-white;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 4px;
+     width: 180px;
+     padding: .8rem 0;
+
+     cursor: pointer;
+     transition: background .2s;
+     
+     &:hover{
+          background: $Very-dark-blue;
+     }
+}
+
+.btn-mobile{
+     border:none;
+     background: transparent;
+     cursor: pointer;
+     display: none;
+     z-index: 999;
+}
+
+
