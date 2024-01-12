@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+:root{
+     --Bright-orange: hsl(31, 77%, 52%);
+     --Dark-cyan: hsl(184, 100%, 22%);
+     --Very-dark-cyan: hsl(179, 100%, 13%);
+     --Transparent-white: hsla(0, 0%, 100%, 0.75);
+     --Very-light-gray: hsl(0, 0%, 95%); 
+}
+
+body{
+     font-family: 'Lexend Deca', sans-serif;
+     font-size: 15px;
+
+     min-height: 100vh;
+     background:var(--Very-light-gray);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+}
+
+.title{
+     font-family: 'Big Shoulders Display', sans-serif;
+     font-size: 2.4rem;
+     letter-spacing: 1px;
+
+     text-transform: uppercase;
+     color: var(--Very-light-gray);
+
+     margin-bottom: 20px;
+}
+.text{
+     color: var(--Transparent-white);
+     line-height: 1.8rem;
+     margin-bottom: 60px;
+}
+.button{
+     border: none;
+     background: var(--Very-light-gray);
+     border: 2px solid transparent;
+     width: 140px;
+     padding: .8rem 0;
+     cursor: pointer;
+     border-radius: 30px;
+     font-weight: 600;
+
+     transition: .2s ease;
+}
+.test{
+     width: 935px;
+     margin: auto;
+}
+.conteiner{
+     display: grid;
+     grid-template-columns: repeat(auto-fill, 310px);
+     justify-content: center;
+     align-items: center;
+}
+.card{
+     padding: 2.4rem 3.4rem;
+}
+.card__icon{
+     margin-bottom: 30px;
+}
+.card:nth-child(1){
+     background: var(--Bright-orange);
+     border-radius: 12px 0 0 12px;
+}
+.card:nth-child(2){
+     background: var(--Dark-cyan);
+}
+.card:nth-child(3){
+     background: var(--Very-dark-cyan);
+     border-radius: 0 12px 12px 0;
+}
+.card:nth-child(1) .button{
+     color: var(--Bright-orange);
+}
+.card:nth-child(2) .button{
+     color: var(--Dark-cyan);
+}
+.card:nth-child(3) .button{
+     color: var(--Very-dark-cyan);
+}
+.card .button:hover{
+     background: transparent;
+     color: var(--Very-light-gray);
+     border: 2px solid var(--Very-light-gray);
+}
+.attribution { font-size: 11px; text-align: center; margin-top: 20px}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 768px){
+     .conteiner{
+          margin: 2rem auto;
+     }
+     .card:nth-child(1), .card:nth-child(3){
+          border-radius: 0;
+     }
+}
+
+@media (max-width: 567px){
+     .card:nth-child(1){
+          border-radius: 12px 12px 0 0;
+     }
+     .card{
+          padding: 2.5rem 2rem;
+     }
+     .card:nth-child(3){
+          border-radius:0 0 12px 12px;
+     }
+}
