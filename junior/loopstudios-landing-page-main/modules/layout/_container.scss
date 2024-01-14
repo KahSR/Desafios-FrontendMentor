@@ -1,0 +1,57 @@
+.container{
+     padding: 70px $padding-Sides 70px;
+     text-align: center;
+}
+.about{
+     margin-bottom: 100px;
+
+     .subtitle{
+          margin:40px 0 20px;
+     }
+     p{
+          color:$Dark-Gray;
+          line-height: 1.4rem;
+     }
+     .subtitle, p{
+          padding: 0 20px;
+     }
+}
+.creations{
+     .subtitle{
+          margin-bottom: 40px;
+     }
+}
+.gallery{
+     margin-bottom: 40px;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 30px;
+
+     .gallery__box{
+          position: relative;
+         
+          &::before {
+               content: "";
+               position: absolute;
+               top: 0;
+               bottom:0;
+               left: 0;
+               right: 0;
+               z-index: 2;
+               background: linear-gradient(to right, #0008, #0000);
+          }
+
+          picture img{
+               height: 100%;
+          }
+          .subtitle-img{
+               color: $White;
+               position: absolute;
+               z-index: 9999;
+               bottom: -15px;
+               left: 20px;
+               width: 40%;
+               text-align: left;
+          }
+     }
+}
