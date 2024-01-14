@@ -4,17 +4,22 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+     <link rel="stylesheet" href="modules/style.css">
      <title>Frontend Mentor | Loopstudios landing page</title>
 </head>
 <body>
-     <div class="container">
+     <div class="layout">
           <header class="header">
                <div class="navigation">
-                    <a href="#">
-                         <img src="images/logo.svg" alt="logo Loopstudios">
+                    <a href="index.html" class="link-logo">
+                         <img src="images/logo.svg" alt="logo Loopstudios" class="logo">
                     </a>
-                    
+
                     <nav class="nav">
+                         <button type="button" class="button-mobile">
+                              <span class="hamburguer"></span>
+                         </button>
+
                          <ul class="nav__menu">
                               <li><a href="#" class="nav__link">About</a></li>
                               <li><a href="#" class="nav__link">Careers</a></li>
@@ -25,15 +30,113 @@
                     </nav>
                </div>
 
-               <h1 class="title">Immersive experiences that deliver</h1>
+               <h1 class="title title--main">Immersive experiences that deliver</h1>
           </header>
 
-          <main class="main">
+          <main class="container">
 
+               <section class="about">
+                    <picture>
+                         <img src="images/mobile/image-interactive.jpg" alt="">
+                    </picture>
+
+                    <h2 class="subtitle">The leader in interactive VR</h2>
+                    <p>
+                         Founded in 2011, Loopstudios has been producing world-class virtual reality 
+                         projects for some of the best companies around the globe. Our award-winning 
+                         creations have transformed businesses through digital experiences that bind 
+                         to their brand.
+                    </p>
+               </section>
+
+               <section class="creations">
+                    <h2 class="subtitle">Our creations</h2>
+
+                    <div class="gallery">
+                         <a href="#" class="gallery__box">
+                              <picture>
+                                   <img src="images/mobile/image-deep-earth.jpg" alt="">
+                              </picture>
+
+                              <h3 class="subtitle subtitle-img">Deep earth</h3>
+                         </a>
+
+                         <a href="#" class="gallery__box">
+                              <picture>
+                                   <img src="images/mobile/image-night-arcade.jpg" alt="">
+                              </picture>
+
+                              <h3 class="subtitle subtitle-img">Night Arcade</h3>
+                         </a>
+
+                         <a href="#" class="gallery__box">
+                              <picture>
+                                   <img src="images/mobile/image-soccer-team.jpg" alt="">
+                              </picture>
+
+                              <h3 class="subtitle subtitle-img">Soccer Team VR</h3>
+                         </a>
+
+                         <a href="#" class="gallery__box">
+                              <picture>
+                                   <img src="images/mobile/image-grid.jpg" alt="">
+                              </picture>
+
+                              <h3 class="subtitle subtitle-img">The Grid</h3>
+                         </a>
+
+                         <a href="#" class="gallery__box">
+                              <picture>
+                                   <img src="images/mobile/image-from-above.jpg" alt="">
+                              </picture>
+
+                              <h3 class="subtitle subtitle-img">From up above VR</h3>
+                         </a>
+
+                         <a href="#" class="gallery__box">
+                              <picture>
+                                   <img src="images/mobile/image-pocket-borealis.jpg" alt="">
+                              </picture>
+
+                              <h3 class="subtitle subtitle-img">Pocket borealis</h3>
+                         </a>
+
+                         <a href="#" class="gallery__box">
+                              <picture>
+                                   <img src="images/mobile/image-curiosity.jpg" alt="">
+                              </picture>
+
+                              <h3 class="subtitle subtitle-img">The curiosity</h3>
+                         </a>
+
+                         <a href="#" class="gallery__box">
+                              <picture>
+                                   <img src="images/mobile/image-fisheye.jpg" alt="">
+                              </picture>
+
+                              <h3 class="subtitle subtitle-img">Make it fisheye</h3>
+                         </a>
+                    </div>
+
+                    <button type="button" class="button">SEE ALL</button>
+               </section>
           </main>
 
           <footer class="footer">
+               <a href="index.html" class="link-logo">
+                    <img src="images/logo.svg" alt="" class="logo">
+               </a>
 
+               <nav class="nav">
+                    
+                    <ul class="nav__menu">
+                         <li><a href="#" class="nav__link">About</a></li>
+                         <li><a href="#" class="nav__link">Careers</a></li>
+                         <li><a href="#" class="nav__link">Events</a></li>
+                         <li><a href="#" class="nav__link">Products</a></li>
+                         <li><a href="#" class="nav__link">Support</a></li>
+                    </ul>
+               </nav>
           </footer>
      </div>
 </body>
