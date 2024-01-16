@@ -1,0 +1,18 @@
+body{
+     font-family: $font-Alata;
+     font-size: 15px;
+
+     min-height: 100vh;
+}
+img{
+     max-width: 100%;
+}
+h1, h2, h3{
+     font-family: $font-Josefin-Sans;
+}
+a{
+     font-family: $font-Alata;
+}
+h1, h2, h, .nav__link-dropdown{
+     text-transform: $uppercase;
+}

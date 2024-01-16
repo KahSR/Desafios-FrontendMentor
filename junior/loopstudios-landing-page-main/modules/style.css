@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Alata", sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+  font-family: "Alata", sans-serif;
+}
+
+h1, h2, h, .nav__link-dropdown {
+  text-transform: uppercase;
+}
+
+.header {
+  height: 80vh;
+  background: url(/images/mobile/image-hero.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 40px 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__dropdown {
+  padding: 40px 20px 0;
+  background: hsl(0, 0%, 0%);
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transition: 0.3s ease-out;
+  z-index: 998;
+}
+.nav__dropdown .nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__dropdown .nav__menu-dropdown {
+  padding-top: 70px;
+}
+.nav__dropdown .nav__menu-dropdown .nav__link-dropdown {
+  color: hsl(0, 0%, 55%);
+  font-size: 1.4rem;
+  display: block;
+  padding: 0.8rem 0px;
+  margin-bottom: 10px;
+}
+
+#nav.active .nav__dropdown {
+  top: 0;
+}
+
+#nav.active .btn-mobile {
+  position: fixed;
+  top: 48px;
+  right: 20px;
+}
+#nav.active .hamburguer {
+  border-top: transparent;
+}
+#nav.active .hamburguer::before {
+  transform: rotate(135deg);
+}
+#nav.active .hamburguer::after {
+  transform: rotate(-135deg);
+  margin-top: -7px;
+}
+
+.logo {
+  width: 160px;
+}
+
+.btn-mobile {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 999;
+}
+.btn-mobile .hamburguer {
+  display: block;
+  border-top: 2px solid hsl(0, 0%, 100%);
+  width: 30px;
+  position: relative;
+}
+.btn-mobile .hamburguer:before, .btn-mobile .hamburguer::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: hsl(0, 0%, 100%);
+  margin: 5px 0;
+  display: block;
+  position: relative;
+  transition: 0.3s;
+}/*# sourceMappingURL=style.css.map */
