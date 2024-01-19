@@ -1,0 +1,62 @@
+.header{
+     background: $primary-Dark-blue url(/images/mobile/image-header.jpg)no-repeat center;
+     background-size: cover;
+     padding: 40px $padding-sides;
+     position: relative;
+}
+.nav{
+     @include flex(center, space-between);
+
+     &__menu{
+          position:absolute;
+          top: 120px;
+        
+          background: #fff;
+          width: 90%;
+          left: 50%;
+          transform: translate(-50%);
+          min-height: 35vh;
+          padding: 3rem 2rem 0;
+          text-align: center;
+          z-index: 999;
+
+          &::before{
+               @include pseudo;
+               position:absolute;
+               width: 0; 
+               height: 0; 
+               border-top: 30px solid transparent;
+               border-bottom: 30px solid transparent; 
+               border-right:30px solid #fff; 
+               right: 0;
+               top: -30px;
+            
+          }
+     }
+     &__link{
+          display: block;
+          padding: .4rem 0;
+          
+          font-size: 1.2rem;
+          color: $secondary-Dark-grayish-blue;
+     }
+     &__link:not(.nav__link-contact){
+          margin-bottom: 20px;
+     }
+}
+
+.title{
+     margin-top: 80px;
+     margin-bottom: 280px;
+     text-align: center;
+     color: $secondary-White;
+     font-size: 3rem;
+     letter-spacing: 4px;
+     text-transform: uppercase;
+}
+.icon-arrow{
+     position: absolute;
+     left: 50%;
+     bottom: 25%;
+     transform: translate(-50%);
+}

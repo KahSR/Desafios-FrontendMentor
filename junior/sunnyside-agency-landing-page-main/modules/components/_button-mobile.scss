@@ -1,0 +1,17 @@
+.button-mobile{
+     border: none;
+     background: transparent;
+     cursor: pointer;
+}
+.hamburguer{
+     border-top: 2px solid #fff;
+     display: block;
+
+     &::before, &::after{
+          @include pseudo;
+          width: 30px;
+          height: 2px;
+          background: #fff;
+          margin: 5px 0;
+     }
+}

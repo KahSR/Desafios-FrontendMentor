@@ -1,0 +1,9 @@
+@mixin pseudo($display: block, $content: ''){
+     display:$display;
+     content: $content;
+}
+@mixin flex($align, $justify){
+     display: flex;
+     align-items: $align;
+     justify-content: $justify;
+}
