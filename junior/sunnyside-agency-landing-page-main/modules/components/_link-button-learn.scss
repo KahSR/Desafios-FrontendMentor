@@ -1,0 +1,18 @@
+.link-button-learn{
+     text-transform: uppercase;
+     font-family:    $font-fraunces;
+     color:          $secondary-Very-dark-desaturated-lue;
+     font-size:      1rem;
+     font-weight:    900;
+     letter-spacing: 1px;
+
+     padding: .4rem;
+    
+     position: relative
+}
+.link-button-learn--transform{
+     @include borderBottom(hsl(51, 100%, 80%), 5px);
+}
+.link-button-learn--stand{
+     @include borderBottom(hsl(7, 99%, 90%), 5px);
+}

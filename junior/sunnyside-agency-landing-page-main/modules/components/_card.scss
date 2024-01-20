@@ -1,0 +1,22 @@
+.card__group{
+     @include flex(center, center);
+     flex-direction: column;
+     gap:70px;
+}
+.card{
+     @include flex(center, center);
+     flex-direction: column;
+
+     &__img{
+          border-radius: 50%;
+          width:  4.25rem;
+          margin-bottom: 1rem;
+     }
+     &__skill{
+          color: $secondary-Grayish-blue;
+     }
+     .subtitle--size{
+          font-size: 1.2rem;
+          margin-bottom: .5rem;
+     }
+}

@@ -1,0 +1,35 @@
+.wrapper{
+     border: 1px solid red;
+
+     &__container{
+          text-align: center;
+
+          padding: 3rem $space-sides;
+
+          .subtitle{
+               margin-bottom: 1.4rem;
+          }
+          .paragraph{
+               margin-bottom: 2rem;
+          }
+     }
+}
+.wrapper--bg{
+     position: relative;
+     z-index: -1;
+}
+.wrapper__container--bg{
+     position: absolute;
+     z-index: 1;
+     bottom: -2rem;
+}
+.wrapper__container--design{
+     .subtitle--color, .paragraph--color{
+          color: $primary-Dark-desaturated-cyan;
+     }
+}
+.wrapper__container--photography{
+     .subtitle--color, .paragraph--color{
+          color:$primary-Dark-blue;
+     }
+}

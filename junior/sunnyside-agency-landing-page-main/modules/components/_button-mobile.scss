@@ -4,14 +4,16 @@
      cursor: pointer;
 }
 .hamburguer{
-     border-top: 2px solid #fff;
      display: block;
+     border-top: 3px solid #fff;
 
      &::before, &::after{
           @include pseudo;
           width: 30px;
-          height: 2px;
+          height:3px;
           background: #fff;
-          margin: 5px 0;
+          margin: 4px 0;
+          position: relative;
+          transition: .3s;
      }
 }

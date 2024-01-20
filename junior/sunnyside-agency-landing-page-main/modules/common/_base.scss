@@ -1,9 +1,12 @@
 body{
      min-height: 100vh;
 
-     font-family: $font-fraunces;
+     font-family: $font-barlow;
      font-size: 18px;
 }
 a{
      font-family: $font-barlow;
+}
+h1, h2, h3{
+     font-family: $font-fraunces;
 }
