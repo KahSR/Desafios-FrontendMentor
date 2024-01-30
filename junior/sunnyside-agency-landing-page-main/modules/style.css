@@ -217,6 +217,16 @@ picture {
   color: hsl(0, 0%, 100%);
 }
 
+.attribution {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 /* COMPONENTS */
 .link-logo {
   display: inline-block;
