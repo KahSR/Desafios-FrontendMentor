@@ -1,16 +1,21 @@
+/* BASE */
 @import "common/reset";
 @import "common/font";
 @import "common/variables";
-@import "common/mixins";
+@import "common/mixin";
 @import "common/base";
 
+/* LAYOUt */
 @import "layout/header";
-@import "layout/sections";
+@import "layout/main";
+@import "layout/footer";
 
+/* COMPONENTS */    
+@import "components/link-logo";
+@import "components/button-contact";
 @import "components/button-mobile";
-@import "components/link-button";
-@import "components/logo";
 @import "components/titles";
 @import "components/paragraph";
 @import "components/link-button-learn";
-@import "components/card";
+
+@import "layout/media";

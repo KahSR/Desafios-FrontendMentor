@@ -1,0 +1,16 @@
+.button-contact{
+     background:     $White;
+     color:          $Very-dark-desaturated-blue;
+     text-transform: uppercase;
+     font-size:      1.4rem;
+     font-weight:    900;
+     font-family:    $font-fraunces;
+     border-radius:  30px;
+     padding:        1.4rem 2rem;
+
+     &:hover{
+          color: $White;
+          background: rgba(255, 255, 255, 0.35);
+          backdrop-filter: blur(8px);
+     }
+}

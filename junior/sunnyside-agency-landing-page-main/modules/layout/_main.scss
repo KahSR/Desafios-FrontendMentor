@@ -1,0 +1,85 @@
+.wrapper{
+     @include flex(center, space-between);
+
+     &__container, &__picture{
+          width: 50%;
+     }
+}
+.wrapper--flex-direction{
+     flex-direction: row-reverse;
+}
+.wrapper__container{
+     @include width-max(100%, 450px);
+     margin: auto;
+
+     .subtitle{
+          margin-bottom: 30px;
+     }
+     .paragraph{
+          margin-bottom: 35px;
+     }
+}
+
+.wrapper--bg{
+     width: 50%;
+     position: relative;
+}
+.wrapper__container--bg{
+     @include width-max(100%, 380px);
+     text-align: center;
+     padding-bottom: 40px;
+     position:  absolute;
+     bottom:    0;
+     left:      50%;
+     transform: translate(-50%);
+
+     .subtitle{
+          margin-bottom: 20px;
+     }
+}
+.wrapper__container--photography{
+     .subtitle--color, .paragraph--color{
+          color: $Dark-blue;
+     }
+}
+.wrapper__container--graphic{
+     .subtitle--color, .paragraph--color{
+          color: $Dark-desaturated-cyan;
+     }
+}
+.wrapper--cards{
+     padding:    100px 0px 150px;
+     text-align: center;
+}
+.card__group{
+     @include width-max(90%, 1200px);
+     margin:60px auto 0;
+
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+     column-gap: 20px;
+     row-gap: 80px;
+}
+.card{
+     &__avatar{
+          border-radius: 50%;
+          width: 80px;
+          margin: 0 auto 40px;
+     }
+     .paragraph{
+          margin-bottom: 40px;
+     }
+     &__name{
+          font-size: 1.8rem;
+          font-weight: 900;
+          color:     $Very-dark-desaturated-blue;
+     }
+     &__skill{
+          color: $Grayish-blue;
+          font-size: 1.6rem;
+     }
+}
+.gallery{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}

@@ -1,0 +1,121 @@
+@include breakpoints(medium){
+     html{
+          font-size: 55%;
+     }
+     .logo-img{
+          width: 120px;
+     }
+     /*   MENU MOBILE */
+     #js-nav.active .hamburguer{
+          border-top: transparent;
+
+          &::before{
+               transform: rotate(325deg);
+          }
+          &::after{
+               transform: rotate(-325deg);
+               margin-top: -7px;
+          }
+     }
+     #js-nav.active .nav__menu{
+          display: flex;
+     }
+     .nav__menu{
+          display: none;
+          padding: 40px 0;
+          position: absolute;
+          top: 20%;
+          left: 50%;
+          transform: translate(-50%);
+          background-color: $White;
+          @include width-max(100%, 90%);
+          flex-direction: column;
+          gap: 20px;
+
+          &::before{
+               content:'';
+               width: 0;
+               height: 0;
+               border-top: 25px solid transparent;
+               border-bottom: 25px solid transparent;
+               border-right: 25px solid $White;
+
+               position: absolute;
+               right: 0;
+               top: -25px;
+          }
+     }
+     .nav__link{
+          color: $Dark-grayish-blue;
+          width: 150px;
+          text-align:center;
+          padding: .8rem 0;
+     }
+     .button-mobile{
+          display: block;
+     }
+     .button-contact{
+          background: $Yellow;
+          color:      $Very-dark-desaturated-blue;
+          padding: 2rem;
+
+          &:hover{
+               background: hsl(51, 100%, 59%);
+               color: initial;
+          }
+     }
+     /* -------- */
+     .main-title{
+          margin: 4% 0px;
+     }
+
+     .wrapper{
+          padding-top: 50px;
+          flex-direction: column-reverse;
+         
+          &__picture{
+               width: 80%;
+          }
+          &__container{
+               width: 70%;
+          }
+     }
+     .wrapper__container{
+          text-align: center;
+          padding: 60px 0;
+     }
+     .wrapper--column{
+          flex-direction: column;
+     }
+     .wrapper--bg{
+          width: 80%;
+          margin: 10px 0;
+     }
+     .wrapper__container--bg{
+          padding: 20px 20px 80px;
+     }
+}
+@include breakpoints(small){
+     html{
+          font-size: 50%;
+     }
+     .main-title{
+          font-size: 4rem;
+          margin: 10% 0;
+     }
+     .wrapper{
+          padding-top: 0px;
+         
+
+          &__picture{
+               width: 100%;
+          }
+          &__container{
+               width: 90%;
+          }
+     }
+     .wrapper--bg{
+          width: 100%;
+          margin: 0px;
+     }
+}

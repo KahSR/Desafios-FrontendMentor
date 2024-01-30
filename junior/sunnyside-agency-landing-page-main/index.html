@@ -9,42 +9,33 @@
 </head>
 <body>
      <header class="header">
-
           <nav class="nav" id="js-nav">
-               <a href="index.html">
-                    <img src="images/logo.svg" alt="logo Sunnyside" class="logo">
+               <a href="index.html" class="link-logo">
+                    <img src="images/logo.svg" alt="logo Sunnyside" class="logo-img">
                </a>
 
-               <button class="button-mobile" id="js-button-mobile">
+               <button class="button-mobile" id="js-btn-mobile" aria-controls="nav__menu" aria-haspopup="true">
                     <span class="hamburguer"></span>
                </button>
-          
-               <ul class="nav__menu">
-                   <li><a href="#about" class="nav__link">About</a></li>
-                   <li><a href="#servies" class="nav__link">Services</a></li>
-                   <li><a href="#projects" class="nav__link">Projects</a></li>
-                   <li><a href="#contact" class="nav__link link-button">Contact</a></li>
+
+               <ul class="nav__menu" role="menu">
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#services" class="nav__link">Services</a></li>
+                    <li><a href="#projects" class="nav__link">Projects</a></li>
+                    <li><a href="#contact" class="nav__link button-contact">Contact</a></li>
                </ul>
           </nav>
 
-
-          <div class="header__container">
-               <h1 class="title">We are creatives</h1>
+          <div class="header__intro">
+               <h1 class="main-title">We are creatives</h1>
                <img src="images/icon-arrow-down.svg" alt="icon arrow down" class="icon-arrow">
           </div>
      </header>
 
      <main class="main">
-           <!--Section about-->
-
           <section class="wrapper">
-               <div class="wrapper__hero">
-                    <img src="images/desktop/image-transform.jpg" alt="" class="wrapper__img">
-               </div>
-
                <div class="wrapper__container">
                     <h2 class="subtitle">Transform your brand</h2>
-
                     <p class="paragraph">
                          We are a full-service creative agency specializing in helping brands grow fast. 
                          Engage your clients through compelling visuals that do most of the marketing for you.
@@ -52,102 +43,154 @@
 
                     <a href="#" class="link-button-learn link-button-learn--transform">Learn More</a>
                </div>
-          </section> 
 
-          <section class="wrapper">
-               <div class="wrapper__hero">
-                    <img src="images/desktop/image-stand-out.jpg" alt="" class="wrapper__img">
-               </div>
+               <picture class="wrapper__picture">
+                    <img src="images/desktop/image-transform.jpg" alt="">
+               </picture>
+          </section>
 
+          <section class="wrapper  wrapper--flex-direction">
                <div class="wrapper__container">
                     <h2 class="subtitle">Stand out to the right audience</h2>
-
                     <p class="paragraph">
                          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
                     </p>
 
                     <a href="#" class="link-button-learn link-button-learn--stand">Learn More</a>
                </div>
+
+               <picture class="wrapper__picture">
+                    <img src="images/desktop/image-stand-out.jpg" alt="">
+               </picture>
           </section>
 
-          <section class="wrapper wrapper--bg">
-               <div class="wrapper__hero--bg">
-                    <img src="images/mobile/image-graphic-design.jpg" alt="">
-               </div>
-               <div class="wrapper__container wrapper__container--bg wrapper__container--design">
-                    <h2 class="subtitle subtitle--size subtitle--color">Graphic Design</h2>
+          <div class="wrapper wrapper--column">
+               <section class="wrapper--bg">
+                    <picture>
+                         <source media="(max-width: 768px)" srcset="images/mobile/image-graphic-design.jpg">
+                         <img src="images/desktop/image-graphic-design.jpg" alt="two cherries side by side without leaf">
+                    </picture>
 
-                    <p class="paragraph paragraph--color">
-                         Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-                    </p>
-               </div>
-          </section> 
+                    <div class="wrapper__container--bg wrapper__container--graphic">
+                         <h2 class="subtitle subtitle--color subtitle--size">Graphic Design</h2>
+                         <p class="paragraph paragraph--color">
+                              Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+                         </p>
+                    </div>
+               </section>
 
-          <section class="wrapper wrapper--bg">
-               <div class="wrapper__hero--bg">
-                    <img src="images/mobile/image-photography.jpg" alt="">
-               </div>
-               <div class="wrapper__container wrapper__container--bg wrapper__container--photography">
-                    <h2 class="subtitle subtitle--size subtitle--color">Photography</h2>
+               <section class="wrapper--bg">
+                    <picture class="wrapper__hero--bg">
+                         <source media="(max-width: 768px)" srcset="images/mobile/image-photography.jpg">
+                         <img src="images/desktop/image-photography.jpg" alt="An orange with a leaf">
+                    </picture>
 
-                    <p class="paragraph paragraph--color">
-                         Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-                    </p>
-               </div>
-          </section>
+                    <div class="wrapper__container--bg wrapper__container--photography">
+                         <h2 class="subtitle subtitle--color subtitle--size">Photography</h2>
+                         <p class="paragraph paragraph--color">
+                              Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+                         </p>
+                    </div>
+               </section>
+          </div>
 
-          <!--Section Clientes-->
-          <section class="wrapper">
-               <div class="wrapper__container card__group">
-                    <h2 class="subtitle subtitle--client">Client testimonials</h2>
+          <section class="wrapper--cards">
+               <h2 class="subtitle subtitle--client">Client testimonials </h2>
 
+               <div class="card__group">
                     <div class="card">
-                         <div class="card__avatar">
-                              <img src="images/image-emily.jpg" alt="client Emily" class="card__img">
+                         <div class="card__client">
+                              <img src="images/image-emily.jpg" alt="" class="card__avatar">
                          </div>
 
                          <div class="card__about">
-                              <p class="paragraph">
+                              <p class="paragraph paragraph--size">
                                    We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
                               </p>
-                              <h3 class="subtitle subtitle--size">Emily R.</h3>
+
+                              <h3 class="card__name">Emily R.</h3>
                               <small class="card__skill">Marketing Director</small>
                          </div>
                     </div>
 
                     <div class="card">
-                         <div class="card__avatar">
-                              <img src="images/image-thomas.jpg" alt="client Thomas" class="card__img">
+                         <div class="card__client">
+                              <img src="images/image-thomas.jpg" alt="" class="card__avatar">
                          </div>
 
                          <div class="card__about">
-                              <p class="paragraph">
+                              <p class="paragraph paragraph--size">
                                    Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
                               </p>
-                              <h3 class="subtitle subtitle--size">Thomas S.</h3>
+
+                              <h3 class="card__name">Thomas S.</h3>
                               <small class="card__skill">Chief Operating Officer</small>
                          </div>
                     </div>
 
                     <div class="card">
-                         <div class="card__avatar">
-                              <img src="images/image-jennie.jpg" alt="client Jennie" class="card__img">
+                         <div class="card__client">
+                              <img src="images/image-jennie.jpg" alt="" class="card__avatar">
                          </div>
 
                          <div class="card__about">
-                              <p class="paragraph">
+                              <p class="paragraph paragraph--size">
                                    Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
                               </p>
-                              <h3 class="subtitle subtitle--size">Jennie F.</h3>
+
+                              <h3 class="card__name">Jennie F.</h3>
                               <small class="card__skill">Business Owner</small>
                          </div>
                     </div>
-
                </div>
-          </section> 
+          </section>
 
+          <div class="gallery">
+               <img src="images/desktop/image-gallery-milkbottles.jpg" alt="three bottles of milk with blue background and clouds
+               ">
+               <img src="images/desktop/image-gallery-orange.jpg" alt="sliced ​​orange on top of plate and orange background">
+               <img src="images/desktop/image-gallery-cone.jpg" alt="casquinha de sorvete em um fundo azul">
+               <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes stacked with pink background
+               ">
+          </div>
      </main>
+     
+     <footer class="footer">
+          <a href="index.html" class="link-logo">
+               <img src="images/logo-footer.svg" alt="logo Sunnyside" class="logo-img">
+          </a>
+
+          <nav class="nav--footer">
+               <ul class="nav__menu--footer">
+                    <li>
+                         <a href="#about" class="nav__link--footer">About</a>
+                    </li>
+                    <li>
+                         <a href="#services" class=" nav__link--footer">Services</a>
+                    </li>
+                    <li>
+                         <a href="#projects" class=" nav__link--footer">Projects</a>
+                    </li>
+               </ul>
+          </nav>
+
+          <div class="socials">
+               <a href="#facebook" class="socials__link">
+                    <i class="fa-brands fa-square-facebook socials__icon" title="facebook"></i>
+               </a>
+               <a href="#facebook" class="socials__link">
+                    <i class="fa-brands fa-instagram socials__icon" title="instagram"></i>
+               </a>
+               <a href="#facebook" class="socials__link">
+                    <i class="fa-brands fa-twitter socials__icon" title="twitter"></i>
+               </a>
+               <a href="#facebook" class="socials__link">
+                    <i class="fa-brands fa-pinterest socials__icon" title="pinterest"></i>
+               </a>
+          </div>
+     </footer>
 
      <script src="modules/js/script.js"></script>
+     <script src="https://kit.fontawesome.com/fe6cdb5ef7.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,39 @@
+.footer{
+     background: $cor-footer;
+     padding: 70px 0;
+     text-align: center;
+}
+.nav--footer{
+     @include width-max(100%, 300px);
+     margin: 20px auto 50px;
+}
+.nav__menu--footer{
+     @include flex(center, space-between); 
+}
+.nav__link--footer{
+     color: hsl(168, 34%, 30%);
+     font-weight: 900px;
+     font-family: $font-barlow;
+     padding: .4rem;
+
+     transition: color .3s;
+
+     &:hover{
+          color: $White;
+     }
+}
+.socials{
+     @include width-max(100%, 400px);
+     @include flex(center, center);
+     gap: 30px;
+     margin: auto;
+}
+
+.socials__icon{
+     font-size: 2.8rem;
+     color: hsl(167, 40%, 24%);
+
+     &:hover{
+          color: $White;
+     }
+}

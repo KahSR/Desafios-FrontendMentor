@@ -1,0 +1,26 @@
+@mixin flex($align: center, $justify: center){
+     display: flex;
+     align-items: $align;
+     justify-content: $justify;
+}
+@mixin width-max($width: 100%, $max: 1440px){
+     width: $width;
+     max-width: $max;
+}
+@mixin breakpoints($name){
+     @if ($name == "laptop"){
+          @media (max-width: 1024px){
+               @content;
+          }
+     }
+     @else if ($name == "medium"){
+          @media (max-width: 920px){
+               @content;
+          }
+     }
+     @else if($name == "small"){
+          @media (max-width: 500px){
+               @content;
+          }
+     }
+}
