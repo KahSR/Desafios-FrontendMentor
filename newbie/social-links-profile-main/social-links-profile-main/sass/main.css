@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+ul, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  background: hsl(0, 0%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+  background: hsl(0, 0%, 12%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 320px;
+  padding: 4rem;
+}
+.card__header {
+  margin-bottom: 20px;
+}
+.card__img {
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: 20px;
+}
+.card__title {
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+.card__city {
+  color: hsl(75, 94%, 57%);
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+.card__paragraph {
+  color: hsl(0, 0%, 80%);
+}
+.card__item + .card__item {
+  margin-top: 12px;
+}
+.card__link {
+  color: hsl(0, 0%, 100%);
+  background: hsl(0, 0%, 20%);
+  border-radius: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 1.6rem 0;
+  display: block;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s ease-out;
+}
+.card__link::before {
+  content: "";
+  background: hsl(75, 94%, 57%);
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  display: block;
+  transition: 0.4s ease-out;
+}
+.card__link:hover::before {
+  width: 100%;
+}
+.card__link:hover {
+  color: hsl(0, 0%, 12%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 2rem;
+    margin: 100px 0;
+  }
+}
+@media (max-width: 1366px) {
+  .card {
+    padding: 2rem;
+  }
+}/*# sourceMappingURL=main.css.map */

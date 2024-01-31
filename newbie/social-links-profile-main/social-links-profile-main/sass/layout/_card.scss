@@ -1,0 +1,73 @@
+.card{
+     text-align:    center;
+     background:    $Dark-Grey;
+     color:         $White;
+     border-radius: 12px;
+     
+
+     width: 90%;
+     max-width: 320px; 
+     padding:   4rem;
+
+     &__header{
+          margin-bottom: 20px;
+     }
+     &__img{
+          border-radius: 50%;
+          width:         100px;
+          margin-bottom: 20px;
+     }
+     &__title{
+          font-size:     2.4rem;
+          margin-bottom: 8px;
+     }
+     &__city{
+          color: $green;
+          font-weight: 700;
+          font-size: 1.4rem;
+          margin-bottom: 30px;
+     }
+     &__paragraph{
+          color: hsl(0, 0%, 80%);
+     }
+
+     &__item + &__item{
+          margin-top: 12px;
+     }
+
+     &__link{
+          color: $White;
+          background: $Grey;
+          border-radius: 12px;
+          font-weight: 700;
+          letter-spacing: 1px;
+
+          padding: 1.6rem 0;
+
+          display: block;
+          position: relative;
+          z-index: 1;
+          overflow: hidden;
+          transition: .5s ease-out;
+          @include hoverBefore();
+
+          &:hover{
+               color: $Dark-Grey;
+          }
+     }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 768px){
+     .card{
+          padding:  2rem;
+          margin: 100px 0;
+     }
+}
+@media (max-width: 1366px){
+     .card{
+          padding:  2rem;
+     }
+}

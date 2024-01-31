@@ -1,0 +1,23 @@
+/*@mixin hoverBefore(){
+     &::before{
+          content: '';
+          background: $green;
+          width: 0;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index:-1;
+          position: absolute;
+          display: block;
+          transition: .4s ease-out;
+     }
+     &:hover::before{
+          width: 100%;
+     }
+}*/
+$i: 0;
+@for $i from 1 through 5{
+     .card__link-#{$i} {
+          font-size: 15px * $i;
+     }
+}
