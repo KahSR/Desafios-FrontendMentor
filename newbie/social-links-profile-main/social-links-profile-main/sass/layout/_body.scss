@@ -6,9 +6,13 @@ body{
 
      font-family: $font-Inter;
      font-size: 1.4rem;
-     background: $Off-Black;
+     background: var(--bg-body);
 
      display: flex;
      align-items: center;
      justify-content: center;
+}
+
+.light-mode .button-mode__indicator{
+     transform: translateX(25px);
 }

@@ -6,3 +6,30 @@ $White: hsl(0, 0%, 100%);
 $Grey:  hsl(0, 0%, 20%);
 $Dark-Grey: hsl(0, 0%, 12%);
 $Off-Black: hsl(0, 0%, 8%);
+$about:  hsl(0, 0%, 80%);
+
+$light-white:hsl(50, 0%, 90%);
+
+:root{
+     --bg-body: #{$Off-Black};
+     --text-city: #{$green};
+     --bg-card: #{$Dark-Grey};
+     --color-hover: #{$Dark-Grey};
+     --bg-hover: #{$green};
+     --color-title-link: #{$White};
+     --about: #{$about};
+     --bg-link: #{$Grey};
+     --bg-indicator: #{$White};
+     --color-icon: #{$Off-Black};
+}
+
+.light-mode{
+     --bg-body: #{$light-white};
+     --bg-card: #{$White};
+     --color-title-link: #{$Off-Black};
+     --about: #{$Grey};
+     --bg-link: #{$light-white};
+     --color-hover: #{$Grey};
+     --bg-indicator: #{$Off-Black};
+     --color-icon: #{$White};
+}

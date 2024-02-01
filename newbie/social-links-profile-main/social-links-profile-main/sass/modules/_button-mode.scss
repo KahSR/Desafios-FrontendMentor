@@ -1,0 +1,35 @@
+.button-mode{
+     border:none;
+     background: transparent;
+     border-radius: 12px;
+     width: 50px;
+     height: 30px;
+     box-shadow: inset 8px 60px rgba(0, 0, 0, .1),
+                 inset 8px 8px rgba(0, 0, 0, .1),
+                 inset -4px 4px rgba(0, 0, 0, .1);
+
+     cursor: pointer;
+     position: relative;
+     display: flex;
+     align-items: center;
+     margin:0 auto 12px;
+     
+     &__indicator{
+          background:var(--bg-indicator);
+          width: 22px;
+          height: 22px;
+          border-radius: 50%;
+          
+          position: absolute;
+          left: 2px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          transition: transform .3s ease;
+     }
+     &__icon{
+          color: var(--color-icon);
+          font-size: 1.4rem;
+     }
+}

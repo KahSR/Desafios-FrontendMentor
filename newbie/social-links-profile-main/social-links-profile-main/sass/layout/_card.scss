@@ -1,12 +1,12 @@
 .card{
      text-align:    center;
-     background:    $Dark-Grey;
-     color:         $White;
+     background:    var(--bg-card);
+     color:         var(--color-title-link);
      border-radius: 12px;
      
 
      width: 90%;
-     max-width: 320px; 
+     max-width: 350px; 
      padding:   4rem;
 
      &__header{
@@ -22,13 +22,14 @@
           margin-bottom: 8px;
      }
      &__city{
-          color: $green;
+          color: var(--text-city);
           font-weight: 700;
           font-size: 1.4rem;
           margin-bottom: 30px;
      }
-     &__paragraph{
-          color: hsl(0, 0%, 80%);
+
+     &__about{
+          color: var(--about);
      }
 
      &__item + &__item{
@@ -36,8 +37,9 @@
      }
 
      &__link{
-          color: $White;
-          background: $Grey;
+          color: var(--text);
+          background: var(--bg-link);
+   
           border-radius: 12px;
           font-weight: 700;
           letter-spacing: 1px;
@@ -52,7 +54,7 @@
           @include hoverBefore();
 
           &:hover{
-               color: $Dark-Grey;
+               color: var(--color-hover);
           }
      }
 }
@@ -68,6 +70,6 @@
 }
 @media (max-width: 1366px){
      .card{
-          padding:  2rem;
+          margin: 40px 0;
      }
 }

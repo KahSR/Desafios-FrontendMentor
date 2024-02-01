@@ -9,6 +9,30 @@ ul, a {
   text-decoration: none;
 }
 
+:root {
+  --bg-body: hsl(0, 0%, 8%);
+  --text-city: hsl(75, 94%, 57%);
+  --bg-card: hsl(0, 0%, 12%);
+  --color-hover: hsl(0, 0%, 12%);
+  --bg-hover: hsl(75, 94%, 57%);
+  --color-title-link: hsl(0, 0%, 100%);
+  --about: hsl(0, 0%, 80%);
+  --bg-link: hsl(0, 0%, 20%);
+  --bg-indicator: hsl(0, 0%, 100%);
+  --color-icon: hsl(0, 0%, 8%);
+}
+
+.light-mode {
+  --bg-body: hsl(50, 0%, 90%);
+  --bg-card: hsl(0, 0%, 100%);
+  --color-title-link: hsl(0, 0%, 8%);
+  --about: hsl(0, 0%, 20%);
+  --bg-link: hsl(50, 0%, 90%);
+  --color-hover: hsl(0, 0%, 20%);
+  --bg-indicator: hsl(0, 0%, 8%);
+  --color-icon: hsl(0, 0%, 100%);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -17,19 +41,23 @@ body {
   min-height: 100vh;
   font-family: "Inter", sans-serif;
   font-size: 1.4rem;
-  background: hsl(0, 0%, 8%);
+  background: var(--bg-body);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.light-mode .button-mode__indicator {
+  transform: translateX(25px);
+}
+
 .card {
   text-align: center;
-  background: hsl(0, 0%, 12%);
-  color: hsl(0, 0%, 100%);
+  background: var(--bg-card);
+  color: var(--color-title-link);
   border-radius: 12px;
   width: 90%;
-  max-width: 320px;
+  max-width: 350px;
   padding: 4rem;
 }
 .card__header {
@@ -45,20 +73,20 @@ body {
   margin-bottom: 8px;
 }
 .card__city {
-  color: hsl(75, 94%, 57%);
+  color: var(--text-city);
   font-weight: 700;
   font-size: 1.4rem;
   margin-bottom: 30px;
 }
-.card__paragraph {
-  color: hsl(0, 0%, 80%);
+.card__about {
+  color: var(--about);
 }
 .card__item + .card__item {
   margin-top: 12px;
 }
 .card__link {
-  color: hsl(0, 0%, 100%);
-  background: hsl(0, 0%, 20%);
+  color: var(--text);
+  background: var(--bg-link);
   border-radius: 12px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -71,7 +99,7 @@ body {
 }
 .card__link::before {
   content: "";
-  background: hsl(75, 94%, 57%);
+  background: var(--bg-hover);
   width: 0;
   height: 100%;
   top: 0;
@@ -85,7 +113,7 @@ body {
   width: 100%;
 }
 .card__link:hover {
-  color: hsl(0, 0%, 12%);
+  color: var(--color-hover);
 }
 
 .attribution {
@@ -105,6 +133,35 @@ body {
 }
 @media (max-width: 1366px) {
   .card {
-    padding: 2rem;
+    margin: 40px 0;
   }
+}
+.button-mode {
+  border: none;
+  background: transparent;
+  border-radius: 12px;
+  width: 50px;
+  height: 30px;
+  box-shadow: inset 8px 60px rgba(0, 0, 0, 0.1), inset 8px 8px rgba(0, 0, 0, 0.1), inset -4px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 12px;
+}
+.button-mode__indicator {
+  background: var(--bg-indicator);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  position: absolute;
+  left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+.button-mode__icon {
+  color: var(--color-icon);
+  font-size: 1.4rem;
 }/*# sourceMappingURL=main.css.map */
