@@ -1,0 +1,33 @@
+.header{
+     background: #212121 url(/images/desktop/image-hero.jpg)no-repeat center center;
+     min-height: 100vh;
+}
+.nav{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     max-width: 980px;
+     margin: auto;
+     padding-top: 60px;
+}
+.nav__menu{
+     list-style: none;
+     display: flex;
+     align-items: center;
+     gap: 12px;
+}
+.box{
+     max-width: 980px;
+     margin: 120px auto;
+}
+.title{
+     font-family: $font-alata;
+     font-size: 4em;
+     letter-spacing: 4px;
+     text-transform: uppercase;
+     color: $White;
+     border: 2px solid;
+
+     padding: 20px 20px 20px 50px;
+     max-width: 55%;
+}
