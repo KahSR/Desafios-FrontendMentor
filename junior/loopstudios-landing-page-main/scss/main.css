@@ -21,7 +21,7 @@ body {
 
 .header {
   background: #212121 url(/images/desktop/image-hero.jpg) no-repeat center center;
-  min-height: 100vh;
+  background-size: cover;
 }
 
 .nav {
@@ -42,18 +42,47 @@ body {
 
 .box {
   max-width: 980px;
-  margin: 120px auto;
+  margin: auto;
+  padding: 120px 0;
 }
 
 .title {
   font-family: "Alata", sans-serif;
-  font-size: 4em;
+  font-weight: normal;
+  font-size: 4.5em;
   letter-spacing: 4px;
+  line-height: 6.5rem;
   text-transform: uppercase;
   color: hsl(0, 0%, 100%);
   border: 2px solid;
-  padding: 20px 20px 20px 50px;
-  max-width: 55%;
+  padding: 50px 20px 50px 50px;
+  max-width: 60%;
+}
+
+.about {
+  max-width: 1100px;
+  margin: 150px auto;
+  display: flex;
+  position: relative;
+}
+.about__picture {
+  width: 65%;
+}
+.about__container {
+  width: 48%;
+  padding: 80px 0px 0px 75px;
+  background: hsl(0, 0%, 100%);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.about .subtitle {
+  margin-bottom: 20px;
+}
+.about__text {
+  color: hsl(0, 0%, 41%);
+  font-family: "Alata", sans-serif;
+  line-height: 2.6rem;
 }
 
 .nav__link {
@@ -63,4 +92,10 @@ body {
   font-family: "Alata", sans-serif;
   padding: 0.4rem;
   display: inline-block;
+}
+
+.subtitle {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 0%);
 }/*# sourceMappingURL=main.css.map */

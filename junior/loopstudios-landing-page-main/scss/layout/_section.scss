@@ -1,0 +1,28 @@
+.about{
+     max-width: 1100px;
+     margin: 150px auto;
+
+     display: flex;
+     position: relative;
+     &__picture{
+          width: 65%;
+     }
+     &__container{
+          width: 48%;
+        
+          padding: 80px 0px 0px 75px;
+          background: $White;
+          
+          position: absolute;
+          bottom: 0;
+          right: 0;
+     }
+     .subtitle{
+          margin-bottom: 20px;
+     }
+     &__text{
+          color: $Very-Dark-Gray;
+          font-family: $font-alata;
+          line-height: 2.6rem;
+     }
+}
