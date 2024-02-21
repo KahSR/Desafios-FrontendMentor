@@ -1,0 +1,37 @@
+.gallery{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 25px;
+
+     &__card{
+          text-decoration: none;
+          display: inline-block;
+          position: relative;
+
+          &::before{
+               content: '';
+               width:100%;
+               height: 25%;
+               position: absolute;
+               bottom: 0;
+               display: block;
+              
+               background: linear-gradient(to top, #0006, #0000);
+          }
+     }
+     &__box{
+          display: block;
+          height: 100%;
+          z-index: -1;
+     }
+     .subtitle--gallery{
+          max-width: 65%;
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          z-index: 1;
+     }
+     .subtitle--gallery-max{
+          max-width: 40%;
+    }
+}

@@ -1,0 +1,17 @@
+.link-see{
+     text-decoration: none;
+     display: inline-block;
+     border: 1px solid $Black;
+     border-radius: 4px;
+     padding: .8rem 4rem;
+     color: $Black;
+     font-family: $font-alata;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     transition: .2s;
+
+     &:hover{
+          background: $Black;
+          color: $White;
+     }
+}

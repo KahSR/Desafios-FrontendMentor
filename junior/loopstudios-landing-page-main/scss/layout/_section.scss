@@ -4,6 +4,7 @@
 
      display: flex;
      position: relative;
+
      &__picture{
           width: 65%;
      }
@@ -24,5 +25,18 @@
           color: $Very-Dark-Gray;
           font-family: $font-alata;
           line-height: 2.6rem;
+     }
+}
+
+.creations{
+     max-width: 1100px;
+     margin:0 auto 150px auto;
+
+     &__header{
+          margin-bottom: 60px;
+
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
      }
 }
