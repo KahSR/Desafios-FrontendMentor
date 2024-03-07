@@ -1,9 +1,18 @@
 .nav__link{
      text-decoration: none;
      color: $White;
-     font-size: 1.8rem;
+     font-size: 1.7rem;
      font-family: $font-alata;
      
-     padding: .4rem;
-     display: inline-block;
+     padding: .8rem;
+     display: block;
+     position: relative;
+     
+     &::before{
+          @include hoverBorderBottom(0%);
+          transition: .2s;
+     }
+     &:hover::before{
+         @include hoverBorderBottom(40%);
+     }
 }

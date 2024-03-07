@@ -19,8 +19,7 @@
      'logo socials'
      'nav-menu copy';
      justify-content: space-between;
-     align-items: flex-end;
-     gap: 20px;
+     align-items: center;
 }
 .logo--footer{
      grid-area: logo;
@@ -29,9 +28,22 @@
      grid-area: socials;
 
      display: flex;
-     align-items: center;
+     align-items: flex-end;
      justify-content: flex-end;
-     gap: 12px;
+     gap: 5px;
+}
+.socials__links{
+     display:inline-block;
+     padding: .8rem;
+     position: relative;
+
+     &::before{
+          @include hoverBorderBottom(0%);
+          transition: .2s;
+     }
+     &:hover::before{
+         @include hoverBorderBottom(40%);
+     }
 }
 .copy{
      grid-area: copy;

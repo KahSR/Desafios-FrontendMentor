@@ -5,9 +5,24 @@
 
      &__card{
           text-decoration: none;
-          display: inline-block;
+          display: block;
           position: relative;
 
+          &::after{
+               opacity: 0%;
+               transition: .2s;
+               content: '';
+               width: 100%;
+               height: 100%;
+               background: hsl(0, 0%, 80%);
+               position: absolute;
+               top: 0;
+               left: 0;
+               z-index: 2;
+          }
+          &:hover::after{
+               opacity: 75%;
+          }
           &::before{
                content: '';
                width:100%;
@@ -18,18 +33,24 @@
               
                background: linear-gradient(to top, #0006, #0000);
           }
+          &:hover .subtitle--gallery{
+               color: $Black;
+               transition: color .3s;
+          }
      }
+
      &__box{
           display: block;
           height: 100%;
-          z-index: -1;
+          width: 100%;
      }
+     
      .subtitle--gallery{
           max-width: 65%;
           position: absolute;
           bottom: 20px;
-          left: 20px;
-          z-index: 1;
+          left:35px;
+          z-index: 3;
      }
      .subtitle--gallery-max{
           max-width: 40%;
