@@ -12,3 +12,21 @@
      transform: translate(-50%);
      background: #fff;
 }
+
+@mixin breakpoints($name){
+     @if ($name == 'movel-one'){
+          @media (max-width: 730px){
+               @content;
+          }
+     }
+     @else if  ($name == 'tablet'){
+          @media (max-width: 768px){
+               @content;
+          }
+     }
+     @else if ($name == 'laptop'){
+          @media (max-width: 1024px){
+               @content;
+          }
+     }
+}

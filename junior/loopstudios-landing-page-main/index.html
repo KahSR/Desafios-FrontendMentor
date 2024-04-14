@@ -15,12 +15,16 @@
 </head>
 <body>
      <header class="header">
-          <nav class="nav">
-               <a href="index.html" class="link-logo">
+          <nav class="nav" id="nav">
+               <a href="index.html" class="logo">
                     <img src="images/logo.svg" alt="" class="link-logo__img">
                </a>
 
-               <ul class="nav__menu">
+               <button class="button-mobile" id="js_btn-open">
+                    <img src="images/icon-hamburger.svg" alt="">
+               </button>
+
+               <ul class="nav__menu nav__menu--desktop">
                     <li><a href="#about" class="nav__link ">About</a></li>
                     <li><a href="#careers" class="nav__link">Careers</a></li>
                     <li><a href="#events" class="nav__link">Events</a></li>
@@ -28,6 +32,27 @@
                     <li><a href="#support" class="nav__link">Support</a></li>
                </ul>
           </nav>
+
+          <div class="nav-mobile" id="js_nav-mobile">
+               <div class="nav-mobile__intro">
+                    <a href="index.html" class="link-logo">
+                         <img src="images/logo.svg" alt="" class="link-logo__img">
+                    </a>
+                    
+                    <button class="button-mobile" id="js_btn-close">
+                         <img src="images/icon-close.svg" alt="">
+                    </button>
+               </div>
+
+               <ul class="nav__menu nav__menu--mobile">
+                    <li><a href="#about" class="nav__link nav__link--mobile">About</a></li>
+                    <li><a href="#careers" class="nav__link nav__link--mobile">Careers</a></li>
+                    <li><a href="#events" class="nav__link nav__link--mobile">Events</a></li>
+                    <li><a href="#products" class="nav__link nav__link--mobile">Products</a></li>
+                    <li><a href="#support" class="nav__link nav__link--mobile">Support</a></li>
+               </ul>
+          </div>
+
           <div class="box">
                <h1 class="title">
                     Immersive experiences that deliver
@@ -53,111 +78,85 @@
           </section>
 
           <section class="creations">
-               <div class="creations__header">
-                    <h2 class="subtitle">Our creations</h2>
-                    <a href="#" class="link-see">See all</a>
-               </div>
 
-               <div class="gallery">
-                    <a href="#" class="gallery__card">
-                         <picture class="gallery__box">
-                              <img src="images/desktop/image-deep-earth.jpg" alt="" class="gallery__img">
-                         </picture>
-                         <h3 class="subtitle subtitle--gallery">Deep earth</h3>
-                    </a>
+               <h2 class="subtitle grid_subtitle-creations">Our creations</h2>
 
-                    <a href="#" class="gallery__card">
-                         <picture class="gallery__box">
-                              <img src="images/desktop/image-night-arcade.jpg" alt="" class="gallery__img">
-                         </picture>
-                         <h3 class="subtitle subtitle--gallery">Night arcade</h3>
-                    </a>
+               <a href="#" class="link-see grid_link-see">See all</a>
 
-                    <a href="#" class="gallery__card">
-                         <picture class="gallery__box">
-                              <img src="images/desktop/image-soccer-team.jpg" alt="" class="gallery__img">
-                         </picture>
-                         <h3 class="subtitle subtitle--gallery">Soccer team VR</h3>
-                    </a>
+               <div class="gallery grid_gallery">
+                  <a href="#" class="gallery__card">
+                    <picture class="gallery__box">
+                         <source media="(max-width: 730px)" srcset="images/mobile/image-deep-earth.jpg">
+                         <img src="images/desktop/image-deep-earth.jpg" alt="" class="gallery__img">
+                    </picture>
+                    <h3 class="subtitle subtitle--gallery">Depp Earth</h3>
+                  </a>
 
-                    <a href="#" class="gallery__card">
-                         <picture class="gallery__box">
-                              <img src="images/desktop/image-grid.jpg" alt="" class="gallery__img">
-                         </picture>
-                         <h3 class="subtitle subtitle--gallery subtitle--gallery-max">The grid</h3>
-                    </a>
+                  <a href="#" class="gallery__card">
+                    <picture class="gallery__box">
+                         <source media="(max-width: 730px)" srcset="images/mobile/image-night-arcade.jpg">
+                         <img src="images/desktop/image-night-arcade.jpg" alt="" class="gallery__img">
+                    </picture>
 
-                    <a href="#" class="gallery__card">
-                         <picture class="gallery__box">
-                              <img src="images/desktop/image-from-above.jpg" alt="" class="gallery__img">
-                         </picture>
-                         <h3 class="subtitle subtitle--gallery">From up above VR</h3>
-                    </a>
+                    <h3 class="subtitle subtitle--gallery">Night Arcade</h3>
+                  </a>
 
-                    <a href="#" class="gallery__card">
-                         <picture class="gallery__box">
-                              <img src="images/desktop/image-pocket-borealis.jpg" alt="" class="gallery__img">
-                         </picture>
-                         <h3 class="subtitle subtitle--gallery">Pocket borealis</h3>
-                    </a>
+                  <a href="#" class="gallery__card">
+                    <picture class="gallery__box">
+                         <source media="(max-width: 730px)" srcset="images/mobile/image-soccer-team.jpg">
+                         <img src="images/desktop/image-soccer-team.jpg" alt="" class="gallery__img">
+                    </picture>
 
-                    <a href="#" class="gallery__card">
-                         <picture class="gallery__box">
-                              <img src="images/desktop/image-curiosity.jpg" alt="" class="gallery__img">
-                         </picture>
-                         <h3 class="subtitle subtitle--gallery">The curiosity</h3>
-                    </a>
+                    <h3 class="subtitle subtitle--gallery">Soccer Team VR</h3>
+                  </a>
 
-                    <a href="#" class="gallery__card">
-                         <picture class="gallery__box">
-                              <img src="images/desktop/image-fisheye.jpg" alt="" class="gallery__img">
-                         </picture>
-                         <h3 class="subtitle subtitle--gallery">Make it fisheye</h3>
-                    </a>
+                  <a href="#" class="gallery__card">
+                    <picture class="gallery__box">
+                         <source media="(max-width: 730px)" srcset="images/mobile/image-grid.jpg">
+                         <img src="images/desktop/image-grid.jpg" alt="" class="gallery__img">
+                    </picture>
+
+                    <h3 class="subtitle subtitle--gallery subtitle--gallery-width">The Grid</h3>
+                  </a>
+
+                  <a href="#" class="gallery__card">
+                    <picture class="gallery__box">
+                         <source media="(max-width: 730px)" srcset="images/mobile/image-from-above.jpg">
+                         <img src="images/desktop/image-from-above.jpg" alt="" class="gallery__img">
+                    </picture>
+                    <h3 class="subtitle subtitle--gallery">From Up Above VR</h3>
+
+                  </a>
+
+                  <a href="#" class="gallery__card">
+                    <picture class="gallery__box">
+                         <source media="(max-width: 730px)" srcset="images/mobile/image-pocket-borealis.jpg">
+                         <img src="images/desktop/image-pocket-borealis.jpg" alt="" class="gallery__img">
+                    </picture>
+
+                    <h3 class="subtitle subtitle--gallery">Pocket Borealis</h3>
+                  </a>
+
+                  <a href="#" class="gallery__card">
+                    <picture class="gallery__box">
+                         <source media="(max-width: 730px)" srcset="images/mobile/image-curiosity.jpg">
+                         <img src="images/desktop/image-curiosity.jpg" alt="" class="gallery__img">
+                    </picture>
+
+                    <h3 class="subtitle subtitle--gallery">The Curiosity</h3>
+                  </a>
+
+                  <a href="#" class="gallery__card">
+                    <picture class="gallery__box">
+                         <source media="(max-width: 730px)" srcset="images/mobile/image-fisheye.jpg">
+                         <img src="images/desktop/image-fisheye.jpg" alt="" class="gallery__img">
+                    </picture>
+                    <h3 class="subtitle subtitle--gallery">Make It Fisheye</h3>
+                  </a>
                </div>
           </section>
      </main>
-
-     <footer class="footer">
-          <div class="footer__container">
-               <nav class="nav--footer">
-                    <a href="index.html" class="logo logo--footer">
-                         <img src="images/logo.svg" alt="" class="logo--footer-img">
-                    </a>
-
-                    <ul class="nav__menu">
-                         <li><a href="#about" class="nav__link">About</a></li>
-                         <li><a href="#careers" class="nav__link">Careers</a></li>
-                         <li><a href="#events" class="nav__link">Events</a></li>
-                         <li><a href="#products" class="nav__link">Products</a></li>
-                         <li><a href="#support" class="nav__link">Support</a></li>
-                    </ul>
-
-                    <ul class="socials">
-                         <li>
-                              <a href="#" class="socials__links">
-                                   <img src="images/icon-facebook.svg" alt="" class="socials__icon">
-                              </a>
-                         </li>
-                         <li>
-                              <a href="#" class="socials__links">
-                                   <img src="images/icon-twitter.svg" alt="" class="socials__icon">
-                              </a>
-                         </li>
-                         <li>
-                              <a href="#" class="socials__links">
-                                   <img src="images/icon-pinterest.svg" alt="" class="socials__icon">
-                              </a>
-                         </li>
-                         <li>
-                              <a href="#" class="socials__links">
-                                   <img src="images/icon-instagram.svg" alt="" class="socials__icon">
-                              </a>
-                         </li>
-                    </ul>
-                    <p class="copy">© 2021 Loopstudios. All rights reserved.</p>
-               </nav>
-          </div>
-     </footer>
+     
+     <script src="scss/js/script.js"></script>
 </body>
 </html>
