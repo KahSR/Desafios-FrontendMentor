@@ -32,6 +32,13 @@
      html{
           font-size: 50%;
      }
+     .title{
+          font-size: 4rem;
+          padding: 15px;
+     }
+     .subtitle{
+          font-size: 4rem;
+     }
      .button-mobile{
           display: block;
      }
@@ -59,11 +66,30 @@
           }
      }
      .subtitle--gallery{
+          font-size: 2.5rem;
           width: 45%;
           bottom: 15px;
      }
      .subtitle--gallery-width{
           max-width: 35%;
      }
-     
+     .footer{
+          grid-template-areas: 
+          'logo'
+          'navigation'
+          'socials'
+          'text-copy';
+          justify-content: center;
+          align-items: center;
+
+          &__logo{
+               margin: auto;
+          }
+          &__socials{
+               justify-self: center;
+          }
+          &__menu{
+               flex-direction: column;
+          }
+     }
 }

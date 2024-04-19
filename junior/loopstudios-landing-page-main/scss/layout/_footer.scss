@@ -1,16 +1,57 @@
+.bg{
+     background: $Black;
+     padding: 25px 0px;
+}
+.footer{
+     @include maxwidth(1100px);
+     display: grid;
+     grid-template-areas: 
+     'logo socials'
+     'navigation text-copy';
+     align-items: center;
+     justify-content: space-between;
+     gap: 12px;
 
-/*.socials__links{
-     display:inline-block;
-     padding: .8rem;
-     position: relative;
-     max-width: 50px;
-
-     &::before{
-          @include hoverBorderBottom(0%);
-          transition: .2s;
+     &__logo{
+          grid-area: logo;
      }
-     &:hover::before{
-         @include hoverBorderBottom(40%);
+     &__socials{
+          grid-area: socials;
+          justify-self: flex-end;
+     }
+     &__nav{
+          grid-area: navigation;
+     }
+     &__menu{
+          display: flex;
+          align-items: center;
+     }
+     &__text-copy{
+          grid-area: text-copy;
+          color: $Dark-Gray;
+          font-weight: 700;
+          font-size: 1.8rem;
+     }
+     &__social-link{
+          display:inline-block;
+          padding: .8rem;
+          position: relative;
+          max-width: 50px;
+     
+          &::before{
+               @include hoverBorderBottom(0%);
+               transition: .2s;
+          }
+          &:hover::before{
+              @include hoverBorderBottom(40%);
+          }
      }
 }
-*/
+.attribution{
+     color: $Dark-Gray; 
+     text-align: center;
+
+     a{
+          color: #fff;
+     }
+}

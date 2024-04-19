@@ -203,21 +203,76 @@ body {
   max-width: 45%;
 }
 
-/*.socials__links{
-     display:inline-block;
-     padding: .8rem;
-     position: relative;
-     max-width: 50px;
-
-     &::before{
-          @include hoverBorderBottom(0%);
-          transition: .2s;
-     }
-     &:hover::before{
-         @include hoverBorderBottom(40%);
-     }
+.bg {
+  background: hsl(0, 0%, 0%);
+  padding: 25px 0px;
 }
-*/
+
+.footer {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "logo socials" "navigation text-copy";
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.footer__logo {
+  grid-area: logo;
+}
+.footer__socials {
+  grid-area: socials;
+  justify-self: flex-end;
+}
+.footer__nav {
+  grid-area: navigation;
+}
+.footer__menu {
+  display: flex;
+  align-items: center;
+}
+.footer__text-copy {
+  grid-area: text-copy;
+  color: hsl(0, 0%, 55%);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.footer__social-link {
+  display: inline-block;
+  padding: 0.8rem;
+  position: relative;
+  max-width: 50px;
+}
+.footer__social-link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #fff;
+  transition: 0.2s;
+}
+.footer__social-link:hover::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 3px;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #fff;
+}
+
+.attribution {
+  color: hsl(0, 0%, 55%);
+  text-align: center;
+}
+.attribution a {
+  color: #fff;
+}
+
 .logo {
   display: block;
 }
@@ -262,6 +317,10 @@ body {
   letter-spacing: 2px;
   color: hsl(0, 0%, 80%);
   font-size: 2.5rem;
+}
+
+.nav__link--padding-left {
+  padding-left: 0px;
 }
 
 .subtitle {
@@ -325,6 +384,13 @@ body {
   html {
     font-size: 50%;
   }
+  .title {
+    font-size: 4rem;
+    padding: 15px;
+  }
+  .subtitle {
+    font-size: 4rem;
+  }
   .button-mobile {
     display: block;
   }
@@ -347,10 +413,25 @@ body {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6117647059), rgba(0, 0, 0, 0.0666666667), rgba(0, 0, 0, 0.014));
   }
   .subtitle--gallery {
+    font-size: 2.5rem;
     width: 45%;
     bottom: 15px;
   }
   .subtitle--gallery-width {
     max-width: 35%;
+  }
+  .footer {
+    grid-template-areas: "logo" "navigation" "socials" "text-copy";
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__logo {
+    margin: auto;
+  }
+  .footer__socials {
+    justify-self: center;
+  }
+  .footer__menu {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */
