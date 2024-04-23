@@ -45,7 +45,7 @@ img{
 .card__container{
      padding: 18px 20px;
 }
-.card__subtitle{
+.card__text{
      text-transform: uppercase;
      font-size: 1.4rem;
      font-weight: 500;
@@ -90,7 +90,7 @@ img{
      height: 1px;
      background: var(--cor-dark-grayish-blue);
 }
-.card__subtitle, .card__title, .card__about, .card__box-price, .card__button{
+.card__text, .card__title, .card__about, .card__box-price, .card__button{
      margin-bottom: 15px;
 }
 .card__button{
@@ -128,7 +128,7 @@ img{
      .card__container{
           padding: 18px 30px;
      }
-     .card__subtitle, .card__title, .card__about, .card__box-price, .card__button{
+     .card__text, .card__title, .card__about, .card__box-price, .card__button{
           margin-bottom: 20px;
      }
 }
