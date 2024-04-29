@@ -14,7 +14,7 @@
      --font-s-600: 2rem;
 
      --padding-card: 20px 45px;
-     --margin-container: 0px 100px;
+     --margin-container: 20px 100px;
 
      --lh-text: 150%;
      --lh-quote-main: 120%;
@@ -141,9 +141,6 @@ small{
      color: var(--cor-Very-dark-grayish-blue);
 }
 @media screen and (max-width: 1280px){
-     :root{
-          --margin-container: 50px 100px;
-     }
      .container{
           margin: var(--margin-container);
           grid-template-columns: repeat(2, 1fr);
