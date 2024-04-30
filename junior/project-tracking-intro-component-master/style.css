@@ -54,6 +54,7 @@ h1{
      font-family: var(--font-barlow-condensed);
      font-weight: var(--fw-700);
 }
+
 .uppercase{
      text-transform: uppercase;
 }
@@ -70,12 +71,13 @@ h1{
      border-radius: 100%;
      background:hsl(231, 7%, 85%);
 }
-.teste{
+
+.container{
      height: 100vh;
      position: relative;
      overflow: hidden;
 }
-.position{
+.illustration{
      min-width: 400px;
      
      position: absolute;
@@ -93,6 +95,7 @@ h1{
      right: 0;
      top: 0;
 }
+
 .header{
      max-width: 1200px;
      margin: auto;
@@ -109,6 +112,11 @@ h1{
 }
 .navbar__link{
      color: var(--cor-Very-Dark-Blue);
+     border-bottom: 3px solid transparent;
+     transition: .2s;
+}
+.navbar__link:hover{
+     border-bottom: 3px solid var(--cor-Grayish-Blue);
 }
 .navbar__link--color{
      color:var(--cor-Grayish-Blue);
@@ -126,7 +134,7 @@ h1{
      font-size: var(--fs-tx-1);
      color: var(--cor-Grayish-Blue);
 }
-.tx-decoration-bg{
+.about__tx-decoration-bg{
      background: var(--cor-Very-Dark-Blue);
      color: #fff;
      font-family: var(--font-barlow-condensed);
@@ -145,10 +153,16 @@ h1{
      margin-bottom: 45px;
 }
 .link-button{
-     background: var(--cor-bg-button);
      color: #fff;
      padding: 16px 25px;
      border-radius: 8px;
+}
+.link-button-bg{
+     background: var(--cor-bg-button);
+     transition: .2s;
+}
+.link-button-bg:hover{
+     opacity: 50%;
 }
 .link-button--not-bg{
      background: transparent;
