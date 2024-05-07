@@ -14,11 +14,15 @@
 <body>
      <div class="container">
           <div class="bg-borda"></div>
-          <img src="images/illustration-devices.svg" alt="" class="illustration">
 
-          <header class="header">
-               <img src="images/logo.svg" alt="logo" class="logo">
-               <nav class="navbar">
+          <header class="header grid-header">
+               <nav class="navbar" id="js_navbar">
+                    <img src="images/logo.svg" alt="logo" class="logo">
+
+                    <button class="button-mobile" id="js_btn-menu">
+                         <img src="images/icon-hamburger.svg" alt="icon humburguer" id="js_icon-menu">
+                    </button>
+
                     <ul class="navbar__menu">
                          <li> <a href="#product" class="navbar__link uppercase letter-spacing-1">Product</a> </li>
                          <li><a href="#features" class="navbar__link uppercase letter-spacing-1">Features</a></li>
@@ -29,18 +33,22 @@
                </nav>
           </header>
 
-          <main class="m-container">
-               <section class="about">
-                    <p class="uppercase letter-spacing-4 about__tx-1"><span class="about__tx-decoration-bg letter-spacing-1">New</span> Monograph Dashboard</p>
-                    <h1 class="title uppercase about__title">Powerful insights into your team</h1>
-                    <p class="about__tx-2">Project planning and time tracking for agile teams</p>
+          <div class="box-img grid-box">
+               <img src="images/illustration-devices.svg" alt="" class="img grid-img">
+          </div>
 
-                    <div class="about__links">
-                         <a href="#" class="uppercase letter-spacing-1 link-button link-button-bg">Schedule a demo</a>
-                         <a href="#" class="uppercase letter-spacing-4 link-button link-button--not-bg">to see a live preview</a>
-                    </div>
-               </section>
-          </main>
+          <section class="about grid-about">
+               <p class="uppercase letter-spacing-4 about__tx-1"><span class="about__tx-decoration-bg letter-spacing-1">New</span> Monograph Dashboard</p>
+               <h1 class="title uppercase about__title">Powerful insights into your team</h1>
+               <p class="about__tx-2">Project planning and time tracking for agile teams</p>
+
+               <div class="about__links">
+                    <a href="#" class="uppercase letter-spacing-1 link-button link-button-bg">Schedule a demo</a>
+                    <a href="#" class="uppercase letter-spacing-4 link-button link-button--not-bg">to see a preview</a>
+               </div>
+          </section>
      </div>
+
+     <script src="menu-mobile.js"></script>
 </body>
 </html>
