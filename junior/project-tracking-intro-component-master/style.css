@@ -186,6 +186,8 @@ button{
      color: var(--cor-Grayish-Blue);
      font-weight: var(--fw-400);
 }
+.attribution { font-size: 11px; margin-top:8px;}
+.attribution a { color: hsl(228, 45%, 44%); font-size: 1.3rem}
 
 @media (max-width: 1200px){
      :root{
