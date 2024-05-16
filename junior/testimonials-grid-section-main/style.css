@@ -65,24 +65,24 @@ small{
      display: grid;
      grid-template-columns: repeat(4, 1fr);
      grid-template-areas:
-     "card1 card1 card2 card5"
-     "card3 card4 card4 card5";
+     "card-1 card-1 card-2 card-5"
+     "card-3 card-4 card-4 card-5";
      gap: 25px;
 }
-.grid_card1{
-   grid-area: card1;
+.card:nth-child(1){
+     grid-area: card-1;
 }
-.grid_card2{
-    grid-area: card2;
+.card:nth-child(2){
+     grid-area: card-2;
 }
-.grid_card3{
-     grid-area: card3;
+.card:nth-child(3){
+     grid-area: card-3;
 }
-.grid_card4{
-     grid-area: card4;
+.card:nth-child(4){
+     grid-area: card-4;
 }
-.grid_card5{
-    grid-area: card5;
+.card:nth-child(5){
+     grid-area: card-5;
 }
 .card{
      background: var(--cor-White);
@@ -126,7 +126,7 @@ small{
      font-weight: var(--font-W-500);
      color: var(--cor-White);
 }
-.card__username--color{
+.card__username--secondary{
      color: var(--cor-Very-dark-grayish-blue);
 }
 .card__text-quote-main{
