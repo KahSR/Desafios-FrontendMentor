@@ -145,9 +145,9 @@ small{
           margin: var(--margin-container);
           grid-template-columns: repeat(2, 1fr);
           grid-template-areas:
-          "card1 card4"
-          "card3 card2"
-          "card5 ....";
+          "card-1 card-4"
+          "card-3 card-2"
+          "card-5 ....";
      }
 }
 @media screen and (max-width: 900px){
@@ -158,10 +158,10 @@ small{
           margin: var(--margin-container);
           grid-template-columns: 1fr;
           grid-template-areas:
-          "card1"
-          "card2" 
-          "card3"
-          "card4"
-          "card5";
+          "card-1"
+          "card-2" 
+          "card-3"
+          "card-4"
+          "card-5";
      }
 }
